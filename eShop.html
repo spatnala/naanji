@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="naanjiSite">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+    <title>Naanji eShop | Online Shopping Cart</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/animate.css" rel="stylesheet">-->
+    <link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="row top-menu">
+            <div class="container">
+                <div id="naanji-navbar">
+                    <div class="row row1">
+                        <div class="col-sm-8">
+                            <div class="footer_block top-sm-icons">
+                                <ul class="socials">
+                                    <li>
+                                        Follow us on :
+                                    </li>
+                                    <li>
+                                        <a class="socialTwitter" href="https://twitter.com/naanjistudios" target="_blank">
+                                            <i class="fab fa-twitter">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialFacebook" href="https://www.facebook.com/naanjicreativestudios/" target="_blank">
+                                            <i class="fab fa-facebook-f">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <!--<li>
+                                        <a class="socialGoogle" href="#" target="_blank">
+                                            <i class="fab fa-google-plus-g">
+                                            </i>
+                                        </a>
+                                    </li>-->
+                                    <li>
+                                        <a class="socialGoogle" href="https://www.youtube.com/naanjicreativestudios" target="_blank">
+                                            <i class="fab fa-youtube">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="largenav pull-right">
+                                <li class="upper-links"><a class="links" href="#">Signin</a></li>
+                                <li class="upper-links"><a class="links" href="#">Signup</a></li>
+                                <li class="upper-links"><a class="links" href="#">Guest</a></li>
+                                <li class="upper-links cart-link">
+                                    <div class="cart largenav">
+                                        <a class="cart-button">
+                                            <svg class="cart-svg eShop-cart-symbol" width="16 " height="16 " viewBox="0 0 16 16 ">
+                                                <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                                            </svg>
+                                            <span class="item-number ">0</span>
+                                            <span>Check out</span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--top menu end-->
+        <div class="container">
+            <div class="col-xs-12 col-sm-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand eShop-logo" href="#">
+                        <img src="images/brand-logo.png" alt="First slide">
+                        <span class="logo-slogan">Qualitee, Guarantee..</span>
+                    </a>
+                </div>
+            </div>
+            <!--Logo-->
+            <div class="col-xs-12 col-sm-10">
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav main-menus">
+                        <li><a href="#rangoli">Wicks / Vattulu</a></li>
+						<li><a href="#rangoli">Silk Thread Jewellery</a></li>
+						<li><a href="#rangoli">1 gm Gold Jewellery</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle menu-btn-overwrite" type="button" data-toggle="dropdown" data-hover="dropdown">
+                                    <img src="images/new-icon.png" class="hidden-xs show-sm" />
+                                    Pooja Stores <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#veg-recp">Yantralu</a></li>
+                                    <li><a href="#non-veg-recp">Javvadhi</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Header col 2-->
+        </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/slide1.png" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Learn perfect way of <br>Cooking tips</h1>
+                        <p>Surprise your family members, colleague and friends by cooking different types of Indian traditional and delicious food.</p>
+                        <p><a class="btn btn-lg btn-danger btn-banner" href="#veg-recp" role="button">View Videos &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
+    </div>
+    <!-- /.carousel -->
+    <!--PARALLAX SCROLLING START-->
+    <div class="container contentArea indexServiceWrapper" ng-controller="naanjiData">
+        <div class="searchbar">
+            <div class="smallsearch col-md-8 col-xs-12">
+                <input class="naanji-navbar-input col-xs-11" type="text" placeholder="Search for recipes, tips, bhakti and many more">
+                <button class="naanji-navbar-button col-xs-1">
+                    <svg width="15px" height="15px">
+                        <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+            
+    </div>
+	<div class="container">
+		<h3>Top Selling Items</h3>
+		<div class="row">
+			<div class="col-md-3 product_items">
+				<div class="product_image-wrapper"><img src="images/video-thumbs/365-wicks.png" class="img-responsive product_image" /></div>
+				<p class="product_name">Handmade 365 Wicks for Pooja.</p>
+				<div class="product_price-wrapper">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="product_add-cart-btn">Add to Cart</a>
+						</div>
+						<div class="col-md-6">
+							<span class="product_price" style="display:none;">₹500.00</span>
+							<span class="product_discount-price">
+								<span class="product_discount-text">Hurry <b>25%</b> Off</span>
+								<span><del>₹500.00</del>₹375.00</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="product_view-wrapper">
+					<div class="product_views">
+						<!-- <a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Quick View"><i style="font-size:18px" class="fa">&#xf06e;</i></a> -->
+						<a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Add to Wishlist"><i style="font-size:18px" class="fa">&#xf004</i></a>
+						<a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Share to Friends"><i style="font-size:18px" class="fa">&#xf1e0</i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 product_items">
+				<div class="product_image-wrapper"><img src="images/video-thumbs/365-wicks.png" class="img-responsive product_image" /></div>
+				<p class="product_name">Handmade 365 Wicks for Pooja.</p>
+				<div class="product_price-wrapper">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="product_add-cart-btn">Add to Cart</a>
+						</div>
+						<div class="col-md-6">
+							<span class="product_price">₹500.00</span>
+							<span class="product_discount-price" style="display:none;">
+								<span class="product_discount-text">Hurry <b>25%</b> Off</span>
+								<span><del>₹500.00</del>₹375.00</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="product_view-wrapper">
+					<div class="product_views">
+						<!-- <a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Quick View"><i style="font-size:18px" class="fa">&#xf06e;</i></a> -->
+						<a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Add to Wishlist"><i style="font-size:18px" class="fa">&#xf004</i></a>
+						<a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Share to Friends"><i style="font-size:18px" class="fa">&#xf1e0</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3>Best Discounts Exclusive for You.</h3>
+		
+	</div>
+    <!-- /END THE FEATURETTES -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-12 footer-socialmedia-wrapper">
+                        <a class="footer-logo eShop-logo" href="index.html">
+                            <img src="images/brand-logo.png" />
+							<span class="logo-slogan">Qualitee, Guarantee..</span>
+                        </a>
+                        <p class="text-muted copyrighted-content">
+                            Copyright &copy; 2018 <span style="color: #e22d61;">Naanji</span>.
+                            <br /><span class="footer-rights">Designed &amp; Developed by <a href="#">SantoshKrishna.Com</a></span>
+                            <br /><span class="footer-rights">All Rights Reserved.</span>
+                        </p>
+                        <div class="footer_block">
+                            <ul class="socials">
+                                <li>
+                                    <a class="socialTwitter" href="https://twitter.com/naanjistudios" target="_blank">
+                                        <i class="fab fa-twitter">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="socialFacebook" href="https://www.facebook.com/naanjicreativestudios/" target="_blank">
+                                        <i class="fab fa-facebook-f">
+                                        </i>
+                                    </a>
+                                </li>
+                                <!--<li>
+                                    <a class="socialGoogle" href="#" target="_blank">
+                                        <i class="fab fa-google-plus-g">
+                                        </i>
+                                    </a>
+                                </li>-->
+                                <li>
+                                    <a class="socialGoogle" href="https://www.youtube.com/naanjicreativestudios" target="_blank">
+                                        <i class="fab fa-youtube">
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="timingsWrapper footer-menu">
+                            <a href="#" data-toggle="modal" data-target="#privacyPolicyModal">Privacy Policy</a>
+
+                            <a href="#" data-toggle="modal" data-target="#termsModal">Terms and Conditions</a>
+
+                            <!--<a href="#">Feedback</a>
+
+
+                            <a href="#">Contact</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--<div class="toTop hidden-xs hidden-sm" pointer>
+        <span class="topIcon">
+            <i class="fa fa-chevron-down"></i>
+        </span><span class="topText">Up</span>
+    </div>-->
+    <div class="modal fade vdoModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <span class="buy-now-text">This item is available in our online store.</span>
+                    <button type="button" class="btn btn-primary btn-banner modal-buy-btn">Buy Now</button>
+                    <button type="button" class="btn btn-primary modal-buy-btn">Browse more items</button>
+                    <button type="button" class="btn btn-primary btn-banner modal-close-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal --><!--&autoplay=1-->
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h4>
+                </div>
+                <div class="modal-body">
+                    Coming Soon
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-banner">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="termsModalLabel">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    Coming Soon
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-banner">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

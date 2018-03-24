@@ -1,0 +1,24 @@
+.ticker {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  background-color:#FFCC00;
+  color:#333;
+  height:100px !important;
+}
+
+.ticker ul {
+  width: 100%;
+  position: relative;
+}
+
+.ticker ul li {
+  width: 100%;
+  display: none;
+  border:none;
+}
+

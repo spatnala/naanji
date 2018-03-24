@@ -1,0 +1,19 @@
+[{
+		"wicksName": "Types of Wicks",
+		"wicksDescription": "Cooking all Indian traditional foods",
+		"wicksImageUrl": "/images/video-thumbs/types-of-wicks.png",
+		"wicksVideoUrl": "https://www.youtube.com/embed/YC1izE2dlyg?rel=0&amp;showinfo=0"
+	},
+	{
+		"wicksName": "Laksha Vattulu",
+		"wicksDescription": "Cooking all Indian traditional foods",
+		"wicksImageUrl": "images/video-thumbs/laksha-vattulu.png",
+		"wicksVideoUrl": "https://www.youtube.com/embed/YC1izE2dlyg?rel=0&amp;showinfo=0"
+	},
+	{
+		"wicksName": "Kamalam Vattulu",
+		"wicksDescription": "Cooking all Indian traditional foods",
+		"wicksImageUrl": "images/video-thumbs/kamalam-vatti.png",
+		"wicksVideoUrl": "https://www.youtube.com/embed/YC1izE2dlyg?rel=0&amp;showinfo=0"
+	}
+]
