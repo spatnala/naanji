@@ -1,7 +1,7 @@
 ﻿var app = angular.module('naanjiSite', []);
 
 app.controller('naanjiData', function ($scope) {
-    $scope.websiteList = [
+    $scope.wicksList = [
         {
             "itemType": "Wicks",
             "searchName": "Akhanda Vatti",
@@ -99,7 +99,27 @@ app.controller('naanjiData', function ($scope) {
 	        "wicksName": "Floating Wicks",
 	        "wicksImageUrl": "images/video-thumbs/floating-wicks.png",
 	        "wicksVdoUrl": "https://www.youtube.com/embed/lT-RzVzYzIY?rel=0&amp;showinfo=0"
-	    },
+	    }
+		
+    ];
+	$scope.recipeList = [
+		{
+            "itemType": "Recipe",
+            "searchName": "Ugadi Pachadi",
+            "vegRecipeName": "Ugadi Pachadi",
+            "vegRecipeImageUrl": "images/video-thumbs/ugadi-pachadi.png",
+            "vegRecipeVdoUrl": "https://www.youtube.com/embed/vKl0GtFgZjQ?rel=0&amp;showinfo=0"
+        },
+		{
+            "itemType": "Recipe",
+            "searchName": "Tomato Roti Pachadi",
+            "vegRecipeName": "Tomato Roti Pachadi",
+            "vegRecipeImageUrl": "images/video-thumbs/tomato-roti-pachadi.png",
+            "vegRecipeVdoUrl": "https://www.youtube.com/embed/7sCpZkj4G34?rel=0&amp;showinfo=0"
+        }
+		
+    ];
+	$scope.artsCraftsList = [
         {
             "itemType": "Arts",
             "searchName": "DIY Stand",
@@ -120,27 +140,7 @@ app.controller('naanjiData', function ($scope) {
             "artsName": "Peacock Diya",
             "artsImageUrl": "images/video-thumbs/peacock-diya.png",
             "artsVdoUrl": "https://www.youtube.com/embed/uATFsODnye4?rel=0&amp;showinfo=0"
-        },
-		{
-            "itemType": "Recipe",
-            "searchName": "Ugadi Pachadi",
-            "vegRecipeName": "Ugadi Pachadi",
-            "vegRecipeImageUrl": "images/video-thumbs/ugadi-pachadi.png",
-            "vegRecipeVdoUrl": "https://www.youtube.com/embed/vKl0GtFgZjQ?rel=0&amp;showinfo=0"
-        },
-		{
-            "itemType": "Recipe",
-            "searchName": "Tomato Roti Pachadi",
-            "vegRecipeName": "Tomato Roti Pachadi",
-            "vegRecipeImageUrl": "images/video-thumbs/tomato-roti-pachadi.png",
-            "vegRecipeVdoUrl": "https://www.youtube.com/embed/7sCpZkj4G34?rel=0&amp;showinfo=0"
         }
 		
     ];
-	
-	////USED TO CLEAR THE SEARCH FILTER
-	$scope.clearFilter = function() {
-      console.log("xxx");
-      $scope.naanjiSearch = {};
-    };
 });

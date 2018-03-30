@@ -115,10 +115,37 @@
     });
 	
 	//CLEAR SEARCH FIELD START
-	$('.naanji-navbar-input').on("keyup",function(){
+	
+	$('.search-clear').click(function(){
 		
-
-		//var txtInputVal=$(this).val().toLowerCase();
+		//$(".naanji-navbar-input").val('');
+		$(this).addClass("hide");
+		//$scope.naanjiSearch = {};
+		hideShowcase();
+	});
+	//CLEAR SEARCH FIELD END
+$('.naanji-navbar-input').on("keyup",function(){
+	//used to show or hide text box clear btn.
+	if($(".naanji-navbar-input").val()!=""){
+			$('.search-clear').removeClass("hide");
+		}else{
+			$('.search-clear').addClass("hide");
+		}
+		
+		var txtInputVal=$(this).val().toLowerCase();
+		$(".showcase .abs h3").each(function() {
+			var listData = $(this).text().toLowerCase();
+			//$(this).closest('.showcase')[ listData.indexOf(txtInputVal) !== -1 ? 'show' : 'hide' ]();
+			if (listData.indexOf(txtInputVal)!=-1) {
+				$(this).parents('.showcase').show();
+				//$(this).parents('.search-container').show();
+				//$(this).parents('[data-search-sections]').show();
+			}
+			else {
+				$(this).parents('.showcase').hide();
+				//$(this).parents('[data-search-sections]').hide();
+			}
+		});
 		//console.log("txt val: "+txtInputVal);
 		//$("[data-search-sections]").each(function(){
 			//var vdoTitle=$(this).find(".showcase").find("h3").text().toLowerCase();
@@ -138,36 +165,24 @@
 			//}
 		//});
 	});
-	$('.search-clear').click(function(){
-		
-		//$(".naanji-navbar-input").val('');
-		$(this).addClass("hide");
-		//$scope.naanjiSearch = {};
-		hideShowcase();
-	});
-	//CLEAR SEARCH FIELD END
-
+	
     $(".naanji-navbar-input").keydown(function () {
         var txtValue = $(this).val();
-		if($(".naanji-navbar-input").val()!=""){
-			$('.search-clear').removeClass("hide");
-		}else{
-			$('.search-clear').addClass("hide");
-		}
+		
 		$("[data-search-container]").each(function () {
 			var dataFound=$(this).find(".showcase h3").text();
-			if (txtValue.indexOf(dataFound) !== -1) {
-				$(this).hide();
-				$(this).find("[data-search-sections]").hide();
+			// if (txtValue.indexOf(dataFound) !== -1) {
+				// $(this).hide();
+				// $(this).find("[data-search-sections]").hide();
 				
-			}
-			else{
-				$(this).show();
-				$(this).find("[data-search-sections]").show();
-			}
-			if($(this).find('.showcase').height()<10){
-				$(this).find('.showcase').hide();
-			}
+			// }
+			// else{
+				// $(this).show();
+				// $(this).find("[data-search-sections]").show();
+			// }
+			// if($(this).find('.showcase').height()<10){
+				// $(this).find('.showcase').hide();
+			// }
 		});
         //console.log(txtValue)
         // $("[data-search-sections]").each(function () {
@@ -220,7 +235,7 @@
             //    alert($(this).attr("class"))
             //});
         //});
-        hideShowcase();
+        //hideShowcase();
     });
 
     //SHOW AND HIDE THE TOP NAV BAR AND BOTTOM BUY BTN START.
@@ -237,6 +252,10 @@
         }
     });
     //SHOW AND HIDE THE TOP NAV BAR AND BOTTOM BUY BTN END.
+	
+	//SEARCH FN START
+	
+//SEARCH FN START
 });
 
 function hideShowcase() {

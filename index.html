@@ -207,7 +207,7 @@
 		<div class="searchbar">
             <div class="smallsearch col-md-8 col-xs-12">
 
-                <input class="naanji-navbar-input col-xs-11" type="text" placeholder="Search for recipes, tips, bhakti and many more" name="" ng-model="naanjiSearch.searchName" />
+                <input class="naanji-navbar-input col-xs-11" type="text" placeholder="Search for recipes, tips, bhakti and many more" name="" /><!-- ng-model="naanjiSearch.searchName"-->
 				<span class="glyphicon glyphicon-remove search-clear hide" ng-click="clearFilter()"></span>
                 <button class="naanji-navbar-button col-xs-1">
                     <svg width="15px" height="15px">
@@ -223,7 +223,7 @@
 
 
 
-        <section data-search-container>
+        <section data-search-container class="search-container">
             <h1>
                 Cooking Playlists
             </h1>
@@ -235,7 +235,7 @@
                 <h3 id="veg-recp">Vegetarian Recipes</h3>
                 <hr />
                 <div class="vegetarian-recipes">
-                    <div class="col-sm-3 showcase" ng-repeat="naanji in websiteList|filter:naanjiSearch">
+                    <div class="col-sm-3 showcase" ng-repeat="naanji in recipeList">
                         <a href="Services-Heart-Surgery.html" data-toggle="modal" data-target="#myModal">
                             <span class="thisVdoUrl">{{naanji.vegRecipeVdoUrl}}</span>
                             <span class="itemType">{{naanji.itemType}}</span>
@@ -284,7 +284,7 @@
             <!--<hr />-->
         </section>
         <div class="clearfix"></div>
-        <section data-search-container class="hide">
+        <section data-search-container class="hide search-container">
             <h1>
                 Beauty Playlists
             </h1>
@@ -310,7 +310,7 @@
             </div>
         </section>
         <div class="clearfix"></div>
-        <section data-search-container class="hide">
+        <section data-search-container class="hide search-container">
             <h1>
                 Tips and Tricks Playlists
             </h1>
@@ -347,7 +347,7 @@
             <!--<hr />-->
         </section>
         <div class="clearfix"></div>
-        <section data-search-container>
+        <section data-search-container class="search-container">
             <h1>
                 Bhakti Playlists
             </h1>
@@ -359,7 +359,7 @@
                 <h3 id="wicks">Wicks/Vottulu</h3>
                 <hr />
                 <div class="wicks">
-                    <div class="col-sm-3 showcase" ng-repeat="naanji in websiteList|filter:naanjiSearch">
+                    <div class="col-sm-3 showcase" ng-repeat="naanji in wicksList">
                         <a href="Services-Heart-Surgery.html" data-toggle="modal" data-target="#myModal">
                             <span class="thisVdoUrl">{{naanji.wicksVdoUrl}}</span>
                             <span class="itemType">{{naanji.itemType}}</span>
@@ -399,7 +399,7 @@
             <!--<hr />-->
         </section>
         <div class="clearfix"></div>
-        <section data-search-container class="hide">
+        <section data-search-container class="hide search-container">
             <h1 id="rangoli">
                 Rangoli/Muggulu Playlists
             </h1>
@@ -416,7 +416,7 @@
             <!--<hr />-->
         </section>
         <div class="clearfix"></div>
-        <section data-search-container>
+        <section data-search-container class='search-container'>
             <h1 id="crafts">
                 Arts and Crafts Playlists
             </h1>
@@ -426,7 +426,7 @@
             <hr />
             <div data-search-sections>
                 <div class="arts-crafts">
-                    <div class="col-sm-3 showcase" ng-repeat="naanji in websiteList|filter:naanjiSearch">
+                    <div class="col-sm-3 showcase" ng-repeat="naanji in artsCraftsList">
                         <a href="Services-Heart-Surgery.html" data-toggle="modal" data-target="#myModal">
                             <span class="thisVdoUrl">{{naanji.artsVdoUrl}}</span>
                             <span class="itemType">{{naanji.itemType}}</span>
@@ -447,7 +447,7 @@
             <!--<hr />-->
         </section>
         <div class="clearfix"></div>
-        <section data-search-container class="hide">
+        <section data-search-container class="hide search-container">
             <h1 id="kids-activities">
                 Kids Fun Activities
             </h1>
@@ -464,7 +464,7 @@
             <!--<hr />-->
         </section>
         <div class="clearfix"></div>
-        <section data-search-container class="hide">
+        <section data-search-container class="hide search-container">
             <h1 id="fun-studio">
                 Fun Studio Playlists
             </h1>
