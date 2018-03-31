@@ -1,4 +1,14 @@
 ﻿$(function () {
+	//VERTICAL SCROLL START
+	$(".newsticker-jcarousellite").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 3,
+		auto:1000,
+		speed:2500,
+		mouseWheel: true
+	});
+	//VERTICAL SCROLL END
     //GO TO TOP OF THE PAGE
 	$('.product_view-btn').tooltip();
 	
@@ -118,9 +128,10 @@
 	
 	$('.search-clear').click(function(){
 		
-		//$(".naanji-navbar-input").val('');
+		$(".naanji-navbar-input").val('');
 		$(this).addClass("hide");
 		//$scope.naanjiSearch = {};
+		$('.showcase').show();
 		hideShowcase();
 	});
 	//CLEAR SEARCH FIELD END
@@ -143,100 +154,9 @@ $('.naanji-navbar-input').on("keyup",function(){
 			}
 			else {
 				$(this).parents('.showcase').hide();
-				//$(this).parents('[data-search-sections]').hide();
 			}
 		});
-		//console.log("txt val: "+txtInputVal);
-		//$("[data-search-sections]").each(function(){
-			//var vdoTitle=$(this).find(".showcase").find("h3").text().toLowerCase();
-			//if(vdoTitle.indexOf(txtInputVal)!==-1){
-				//console.log("if 01");
-				// if($(this).css("height")<100){
-					//$(vdoTitle).parents("[data-search-sections]").show();
-					//$('[data-search-sections]').hide();
-				// }
-				//return false;
-			//}
-			//else{
-				//console.log("else");
-				//$(vdoTitle).parents("[data-search-sections]").show();
-				//$('[data-search-sections]').hide();
-				//return false;
-			//}
-		//});
 	});
-	
-    $(".naanji-navbar-input").keydown(function () {
-        var txtValue = $(this).val();
-		
-		$("[data-search-container]").each(function () {
-			var dataFound=$(this).find(".showcase h3").text();
-			// if (txtValue.indexOf(dataFound) !== -1) {
-				// $(this).hide();
-				// $(this).find("[data-search-sections]").hide();
-				
-			// }
-			// else{
-				// $(this).show();
-				// $(this).find("[data-search-sections]").show();
-			// }
-			// if($(this).find('.showcase').height()<10){
-				// $(this).find('.showcase').hide();
-			// }
-		});
-        //console.log(txtValue)
-        // $("[data-search-sections]").each(function () {
-            // var txtHeading = $(document).find(".showcase").find("h3").text();
-            // //console.log(txtHeading)
-            // //txtHeading=txtHeading.trim()
-            // if (txtValue.indexOf(txtHeading) != -1) {
-                // //console.log(txtHeading + " found");
-				// $(this).hide();
-            // } else {
-                // //console.log("else")
-            // }
-            // //txtHeading = txtHeading.trim();
-            // //$.trim(txtHeading);
-            // //console.log($.trim(txtHeading))
-        // });
-        //if ($(".showcase").is(":hidden")) {
-        //}
-        //$("[data-search-sections]").each(function () {
-            //if ($(this).find(".showcase").length <= 0) {
-            //    $(this).hide();
-            //    $(this).parent().find("h1").hide();
-            //    $(this).parent().find("p").hide();
-            //    $(this).parent().find("hr").hide();
-            //    $(this).siblings().hide();
-            //} else {
-            //    $(this).show();
-            //    $(this).parent().find("h1").show();
-            //    $(this).parent().find("p").show();
-            //    $(this).parent().find("hr").show();
-            //    $(this).siblings().show();
-            //}
-            //$(this).find(".showcase").each(function () {
-                
-            //});
-            //if ($(this).find(".showcase").length == 0) {
-            //    $(this).hide();
-            //    $(this).parent("section").hide();
-            //}
-            //alert($(this).attr("class"));
-            //else {
-            //    $(this).show();
-            //    $(this).parent("section").hide();
-            //}
-            //if ($(this).childdren("div").find(".showcase").length == 0) {
-            //    $(this).childdren("div").hide();
-            //    $(this).childdren("div").prev("hr").hide();
-            //}
-            //$(this).find(".showcase").each(function () {
-            //    alert($(this).attr("class"))
-            //});
-        //});
-        //hideShowcase();
-    });
 
     //SHOW AND HIDE THE TOP NAV BAR AND BOTTOM BUY BTN START.
     $(".buynow-container").hide();
