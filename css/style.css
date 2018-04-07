@@ -4,6 +4,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
+  color: #333;
 }
 
 /*Header*/
@@ -1547,6 +1548,7 @@ ul.main-menus li ul li a {
     display: table;
     width: 100%;
 	border-bottom: 1px solid #ddd;
+	cursor:pointer;
 }
 
 .newsticker-jcarousellite ul li:last-child {
@@ -1922,6 +1924,14 @@ hr {
   padding: 15px;
   z-index: 10;
 }
+.cart-searchbar {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 15px;
+  z-index: 10;
+}
 
 svg {
   color: #fff;
@@ -2152,19 +2162,18 @@ svg {
 }
 
 .product_items {
-  border: 1px solid #eaeaea;
+  border: 1px solid transparent;
   padding: 12px 16px;
   display: block;
   overflow: hidden;
   position: relative;
-  width: 23%;
-  margin-right: 2%;
+
   margin-bottom: 2%;
 }
 
 .product_items:hover {
   background-color: #f6f6f6;
-  border-color: #e22c60;
+      border: 1px solid #eaeaea;
 }
 
 .product_items:before {
@@ -2182,7 +2191,7 @@ svg {
 
 .product_view-wrapper {
   position: absolute;
-  bottom: 69px;
+  bottom: 158px;
   left: 23px;
   right: 23px;
   z-index: 1;
@@ -2212,7 +2221,7 @@ svg {
 }
 
 .product_views {
-  height: 0px;
+  height: 106px;
   overflow: hidden;
   font-size: 16px;
   font-weight: normal;
@@ -2223,7 +2232,7 @@ svg {
 }
 
 .product_items:hover .product_views {
-  height: 143px;
+  height: 193px;
   overflow: visible;
   opacity: 1;
 }
@@ -2235,10 +2244,11 @@ svg {
 
 .product_image {}
 
+.product_items .product_image-wrapper {
+  opacity: 0.8;
+}
 .product_items:hover .product_image-wrapper {
-  /*padding: 15px;
-    margin: 15px 0 0 15px;*/
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .product_items:hover .product_image {}
@@ -2256,9 +2266,11 @@ svg {
 }
 
 .product_name {
-  font-weight: bold;
-  margin-top: 12px;
-  margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #e22c60;
 }
 
 .product_add-cart-btn {
@@ -2268,6 +2280,7 @@ svg {
   font-weight: bold;
   text-decoration: none;
   z-index: 10;
+  float: left;
 }
 
 .product_add-cart-btn:hover {
@@ -2298,7 +2311,6 @@ svg {
   display: block;
   line-height: 18px;
   font-size: 15px;
-  margin-top: -9px;
 }
 
 .product_discount-price span {
@@ -2311,7 +2323,7 @@ svg {
   font-weight: normal;
   color: #333;
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .product_discount-text {
@@ -2319,5 +2331,116 @@ svg {
   font-weight: normal;
   font-size: 14px !important;
 }
+.switch-list-grid-wrapper{
+	text-align: right;
+    margin-top: 20px;
+    font-size: 24px;
+    padding-right: 24px;
+}
+.switch-list-grid-wrapper ul{
+	list-style: none;
+    padding: 0;
+}
+.switch-list-grid-wrapper li{
+	float: right;
+    margin: 0 12px;
+}
+.switch-list-grid-wrapper li a{
+	color: #5a5a5a;
+}
+.switch-list-grid-wrapper li a:hover,.switch-list-grid-wrapper li a.active{
+	color: #e22c60;
+}
+.product_items.product_list-view{
+	width: 100%;
+	    display: table;
+}
+.product_items.product_list-view .product_image-wrapper{
+	width: 30%;
+    display: table-cell;
+}
+.product_items.product_list-view .product_body-details{
+	width: 40%;
+    display: table-cell;
+    vertical-align: top;
+    padding: 0px 20px;
+}
+.product_items.product_list-view .product_view-wrapper, .product_items.product_list-view .product_body-details .product_price-wrapper{
+	display:none;
+}
+.product_items.product_list-view .product_name{
+	margin-top: 0;
+	    margin-bottom: 6px;
+}
+.product_items.product_list-view .product_features{
+	padding-left: 26px;
+	line-height: 16px;
+}
+.product_items.product_list-view .product_features li{
+	    margin-bottom: 8px;
+}
+.product_list-price-view, .product_features, .product_feature-title{
+	display:none;
+}
+.product_items.product_list-view .product_list-price-view,
+.product_items.product_list-view .product_features,
+.product_items.product_list-view .product_feature-title{
+	display:block;
+}
+.product_items.product_list-view .product_feature-title{
+	    font-weight: bold;
+    margin-bottom: 0;
+}
+.product_items.product_list-view .product_list-price-view{
+	display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px;
+    width: 30%;
+}
+.product_items.product_list-view .product_discount-price{
+	float: left;
+    text-align: center;
+    width: 100%;
+}
+.product_items.product_list-view .product_add-cart-btn{
+	    display: block;
+    width: 100%;
+	text-align: center;
+}
+.product_items.product_list-view .product_discount-price span{
+	    margin-bottom: 6px;
+}
+.product_items.product_list-view .product_list-share{
+	color: #333;
+    margin-top: 4px;
+    float: left;
+	width: 100%;
+    text-align: center;
+	text-decoration:none;
+}
+.product_items.product_list-view .product_list-share:hover i{
+	color: #e22c60;
+}
+.product_no-discount {
+font-size: 18px;
+    color: #e22c60;
+    font-weight: bold;
+    text-align: right;
+    display: block;
+    padding: 6px 0;
+}
 
+.cart-search-bar {
+    background: none;
+    padding: 0px;
+}
+    .cart-search-bar .smallsearch {
+        padding: 0px;
+    }
+    .cart-search-bar input {
+            padding: 4px 18px 4px 18px;
+    }
+    .cart-search-bar .naanji-navbar-button {
+        height: 32px;
+    }
 /*SHOPPING CART STYLES END*/
