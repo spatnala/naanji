@@ -4,114 +4,128 @@ app.controller('naanjiData', function ($scope) {
     $scope.wicksList = [
         {
             "itemType": "Wicks",
+            "searchName": "Saneshwara Vatti",
+            "wicksName": "Saneshwara Vatti",
+            "wicksImageUrl": "images/video-thumbs/wicks/saneswara-vatti.jpg",
+            "wicksVdoUrl": "https://www.youtube.com/embed/G-QHVrVoJWQ?rel=0&amp;showinfo=0"
+        },
+        {
+            "itemType": "Wicks",
+            "searchName": "Ardhanareshwara Vatti",
+            "wicksName": "Ardhanareshwara Vatti",
+            "wicksImageUrl": "images/video-thumbs/wicks/ardhanareshwara-vatti.jpg",
+            "wicksVdoUrl": "https://www.youtube.com/embed/7ZZ0QjLZ9A8?rel=0&amp;showinfo=0"
+        },
+        {
+            "itemType": "Wicks",
             "searchName": "Rudraksha Vatti",
             "wicksName": "Rudraksha Vatti",
-            "wicksImageUrl": "images/video-thumbs/wicks/rudraksha-vatti.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/rudraksha-vatti.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/B9tbk-vuDZ8?rel=0&amp;showinfo=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Star Wicks",
             "wicksName": "Star Wicks",
-            "wicksImageUrl": "images/video-thumbs/wicks/star-wick.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/star-wick.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/XK4lc-q-pHw?rel=0&amp;showinfo=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Akhanda Vatti",
             "wicksName": "Akhanda Vatti",
-            "wicksImageUrl": "images/video-thumbs/wicks/akhanda-vatti.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/akhanda-vatti.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/IEnqRUW3c5w?rel=0&amp;controls=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Gandham Vathulu",
             "wicksName": "Gandham Vathulu",
-            "wicksImageUrl": "images/video-thumbs/wicks/gandham-vathulu.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/gandham-vathulu.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/pY-Wsv3nZLs?rel=0&amp;controls=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Kadothulu Easy Way",
             "wicksName": "kadothulu Easy Way",
-            "wicksImageUrl": "images/video-thumbs/wicks/kadothulu-easy-way.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/kadothulu-easy-way.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/UybfXPklgDg?rel=0&amp;controls=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Kumkua Vathulu",
             "wicksName": "Kumkua Vathulu",
-            "wicksImageUrl": "images/video-thumbs/wicks/kumkuma-vathulu.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/kumkuma-vathulu.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/4BNZfCsdXHQ?rel=0&amp;controls=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Pasupu Vathulu",
             "wicksName": "Pasupu Vathulu",
-            "wicksImageUrl": "images/video-thumbs/wicks/pasupu-vathulu.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/pasupu-vathulu.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/VvzpOI70UfI?rel=0&amp;showinfo=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Puvvothulu",
             "wicksName": "Puvvothulu",
-            "wicksImageUrl": "images/video-thumbs/wicks/puvvothulu.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/puvvothulu.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/S5niQOHseVM?rel=0&amp;controls=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "108 Wicks",
             "wicksName": "108 Wicks",
-            "wicksImageUrl": "images/video-thumbs/wicks/108-wicks.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/108-wicks.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/uElSWYtETTo?rel=0&amp;showinfo=0"
         },
 		{
             "itemType": "Wicks",
             "searchName": "Types of Wicks",
             "wicksName": "Types of Wicks",
-            "wicksImageUrl": "images/video-thumbs/wicks/types-of-wicks.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/types-of-wicks.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/6R4XjLQFotA?rel=0&amp;showinfo=0"
         },
         {
             "itemType": "Wicks",
             "searchName": "365 Wicks",
             "wicksName": "365 Wicks",
-            "wicksImageUrl": "images/video-thumbs/wicks/365-wicks.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/365-wicks.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/u3kbne_52_A?rel=0&amp;showinfo=0"
         },
 	    {
 	        "itemType": "Wicks",
 	        "searchName": "Laksha Vattulu",
 	        "wicksName": "Laksha Vattulu",
-	        "wicksImageUrl": "images/video-thumbs/wicks/laksha-vattulu.png",
+	        "wicksImageUrl": "images/video-thumbs/wicks/laksha-vattulu.jpg",
 	        "wicksVdoUrl": "https://www.youtube.com/embed/uQiINFLjsBs?rel=0&amp;showinfo=0"
 	    },
 	    {
 	        "itemType": "Wicks",
 	        "searchName": "Kamalam Vatti",
 	        "wicksName": "Kamalam Vatti",
-	        "wicksImageUrl": "images/video-thumbs/wicks/kamalam-vatti.png",
+	        "wicksImageUrl": "images/video-thumbs/wicks/kamalam-vatti.jpg",
 	        "wicksVdoUrl": "https://www.youtube.com/embed/57Dcod0DuFg?rel=0&amp;showinfo=0"
 	    },
         {
             "itemType": "Wicks",
             "searchName": "Maredudalam Vatti",
             "wicksName": "Maredudalam Vatti",
-            "wicksImageUrl": "images/video-thumbs/wicks/maredudalam-vatti.png",
+            "wicksImageUrl": "images/video-thumbs/wicks/maredudalam-vatti.jpg",
             "wicksVdoUrl": "https://www.youtube.com/embed/Hh3ltQMqcq4?rel=0&amp;showinfo=0"
         },
     	{
     	    "itemType": "Wicks",
     	    "searchName": "Astalakshmi Vattulu",
     	    "wicksName": "Astalakshmi Vattulu",
-    	    "wicksImageUrl": "images/video-thumbs/wicks/astalakshmi-vattulu.png",
+    	    "wicksImageUrl": "images/video-thumbs/wicks/astalakshmi-vattulu.jpg",
     	    "wicksVdoUrl": "https://www.youtube.com/embed/YC1izE2dlyg?rel=0&amp;showinfo=0"
     	},
 	    {
 	        "itemType": "Wicks",
 	        "searchName": "Floating Wicks",
 	        "wicksName": "Floating Wicks",
-	        "wicksImageUrl": "images/video-thumbs/wicks/floating-wicks.png",
+	        "wicksImageUrl": "images/video-thumbs/wicks/floating-wicks.jpg",
 	        "wicksVdoUrl": "https://www.youtube.com/embed/lT-RzVzYzIY?rel=0&amp;showinfo=0"
 	    }
 		

@@ -50,7 +50,7 @@ body {
   height: 280px;
   background-color: #777;
 }
-.carousel .item.active {
+.carousel .item.banner {
 height: 280px;
     background-color: #777;
     background-image: url(../images/banner-new.jpg);

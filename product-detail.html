@@ -13,6 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/smoothproducts.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--<link href="css/animate.css" rel="stylesheet">-->
     <link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
@@ -157,7 +158,7 @@
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="item active">
+            <div class="item banner active">
             </div>
         </div>
 
@@ -168,158 +169,157 @@
     <!--PARALLAX SCROLLING START-->
     <div class="container">
 
-        <div class="row">
-            <div class='col-md-8'>
-                <div class='row'>
-                    <div class='col-md-6'>
-                        <h3>Top Selling Items</h3>
+        <div class="row pdp_container">
+            <div class='col-md-6 pdp_img-wrapper'>
+                <img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive" />
+            </div>
+            <div class='col-md-6 pdp_product-details-wrapper'>
+                <h3 class="pdp_product-title">365 Wicks | గరం మసాలా</h3>
+                <hr />
+                <p class="pdp_prod-desc">Purely made with Hand and used the fresh pure cotton to make these wicks, these wicks can be used for daily puja or on auspecious days.</p>
+                <div class="pdp_reviews-wrapper">
+                    <div class="pdp_star-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
                     </div>
-                    <div class='col-md-6 switch-list-grid-wrapper'>
-                        <ul>
+                    <div class="pdp_star-average-count">4.8(1230)</div>
+                    <div class="pdp_write-review">
+                        <a href='#' data-toggle="modal" data-target="#writeReviewFormModal">Write a review</a>
+                    </div>
 
-                            <li class='list-view'>
-                                <a class="" href="">
-                                    <i class="fa fa-th-list">
-                                    </i>
+                    <!--<div class="popover fade bottom in pdp_review-tooltip">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title" style="display: none;"></h3>
+                        <div class="popover-content">Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</div>
+                    </div>-->
+
+                </div>
+                <hr />
+                <div>
+                    <p class="pdp_mrp-price-wrapper">
+                        <span class="pdp_mrp-price-text">M.R.P:</span>
+                        <span class="pdp_mrp-price-value"><del>₹999.00</del></span>
+                    </p>
+                    <p class="pdp_offer-price-wrapper">
+                        <span class="pdp_offer-price-text">Offer Price:</span>
+                        <span class="pdp_offer-price-value">₹849.00</span>
+                    </p>
+                    <p class="pdp_you-save-wrapper">
+                        <span class="pdp_you-save-text">You Save:</span>
+                        <span class="pdp_you-save-value">₹150.00 (15%)</span>
+                    </p>
+                    <p class="pdp_tax-info"><span>(Inclusive of all taxes)</span></p>
+                </div>
+                <hr />
+                <div>
+                    <p class=''>Features:</p>
+                    <ul class=''>
+                        <li>Must use on festival / auspecious poojas</li>
+                        <li>Can use for daily pooja</li>
+                        <li>Used pure cotton, and hand made</li>
+                    </ul>
+                </div>
+                <hr />
+                <div class="pdp_share-compare-container">
+                    <a href="" class="product_add-cart-btn">Add To Cart</a>
+                    <a href="" class="product_add-cart-btn pdp-share-btn">Share</a>
+                    <a href="" class="product_add-cart-btn pdp-compare-btn">Compare</a>
+                    <div class="pdp_share-tab hide">
+                        <ul>
+                            <li class="facebook">
+                                <a href="#">Facebook<i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#">Twitter<i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="watsapp">
+                                <a href="#">Watsapp<i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li class="pinterest">
+                                <a href="#">Pinterest<i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pdp_compare-tab hide">
+                        <ul>
+                            <li class="">
+                                <a href="#">
+                                    <img src="images/video-thumbs/wicks/365-wicks.jpg" />
                                 </a>
                             </li>
-                            <li class='grid-view'>
-                                <a class="active" href="">
-                                    <i class="fa fa-th">
-                                    </i>
+                            <li class="pdp_compare-drag-n-drop">
+                                <a href="#">
                                 </a>
+                            </li>
+                            <li class="pdp_compare-drag-n-drop">
+                                <a href="#">
+                                </a>
+                            </li>
+                            <li class="pdp_compare-drag-n-drop">
+                                <a href="#">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pdp_compare-products">Compare</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class='row cart_product-list-wrapper'>
-                    <div class="col-md-4 product_items">
-                        <div class="product_image-wrapper"><img src="images/video-thumbs/wicks/365-wicks.png" class="img-responsive product_image" /></div>
-                        <div class='product_body-details'>
-                            <p class="product_name">365 Wicks</p>
-                            <p>Hand made pure cotton wicks, can be used for daily puja.</p>
-                            <p class='product_feature-title'>Features:</p>
-                            <ul class='product_features'>
-                                <li>Must use on festival / auspecious poojas</li>
-                                <li>Can use for daily pooja</li>
-                                <li>Used pure cotton, and hand made</li>
-                            </ul>
-
-                            <div class="product_price-wrapper">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a href="#" class="product_add-cart-btn">Quick View</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <span class="product_price" style="display:none;">₹500.00</span>
-                                        <span class="product_discount-price">
-                                            <span class="product_discount-text">Hurry <b>25%</b> Off</span>
-                                            <span><del>₹500.00</del>₹375.00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='product_list-price-view'>
-                            <div class="row">
-
-                                <div class="col-md-12">
-                                    <span class="product_price" style="display:none;">₹500.00</span>
-                                    <span class="product_discount-price">
-                                        <span class="product_discount-text">Hurry <b>25%</b> Off</span>
-                                        <span><del>₹500.00</del>₹375.00</span>
-                                    </span>
-                                </div>
-                                <div class="col-md-12">
-                                    <a href="#" class="product_add-cart-btn">Quick View</a>
-                                </div>
-                                <div class="col-md-12">
-                                    <a href="#" class="product_list-share">
-                                        <i class="fa fa-heart">
-                                        </i> Add to wish list
-                                    </a>
-                                    <a href="#" class="product_list-share">
-                                        <i class="fa fa-share-alt">
-                                        </i> Share
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product_view-wrapper">
-                            <div class="product_views">
-                                <a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Add to Wishlist"><i style="font-size:18px" class="fa">&#xf004</i></a>
-                                <a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Share to Friends"><i style="font-size:18px" class="fa">&#xf1e0</i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 product_items">
-                        <div class="product_image-wrapper"><img src="images/video-thumbs/wicks/365-wicks.png" class="img-responsive product_image" /></div>
-                        <div class='product_body-details'>
-                            <p class="product_name">365 Wicks</p>
-                            <p>Hand made pure cotton wicks, can be used for daily puja.</p>
-                            <p class='product_feature-title'>Features:</p>
-                            <ul class='product_features'>
-                                <li>Must use on festival / auspecious poojas</li>
-                                <li>Can use for daily pooja</li>
-                                <li>Used pure cotton, and hand made</li>
-                            </ul>
-
-                            <div class="product_price-wrapper">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a href="#" class="product_add-cart-btn">Quick View</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <span class="product_no-discount">
-                                            <span>₹500.00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='product_list-price-view'>
-                            <div class="row">
-
-                                <div class="col-md-12">
-                                    <span class="product_price" style="display:none;">₹500.00</span>
-                                    <span class="product_discount-price">
-                                        <span>₹500.00</span>
-                                    </span>
-                                </div>
-                                <div class="col-md-12">
-                                    <a href="#" class="product_add-cart-btn">Quick View</a>
-                                </div>
-                                <div class="col-md-12">
-                                    <a href="#" class="product_list-share">
-                                        <i class="fa fa-heart">
-                                        </i> Add to wish list
-                                    </a>
-                                    <a href="#" class="product_list-share">
-                                        <i class="fa fa-share-alt">
-                                        </i> Share
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product_view-wrapper">
-                            <div class="product_views">
-                                <a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Add to Wishlist"><i style="font-size:18px" class="fa">&#xf004</i></a>
-                                <a class="product_view-btn" data-toggle="tooltip" data-placement="bottom" data-original-title="Share to Friends"><i style="font-size:18px" class="fa">&#xf1e0</i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=col-md-4>
-                <div class='row'>ADS</div>
             </div>
         </div>
     </div>
     <div class="container">
-        <h3>Best Discounts Exclusive for You.</h3>
+        <h3>Suggestions will come here.</h3>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive"></a></div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+            </div>
 
+        </div>
     </div>
     <!-- /END THE FEATURETTES -->
+
+    <div class="container">
+        <h3>Product Specifications</h3>
+        <ul>
+            <li>
+                <span>Material</span>
+                <span>Cotton</span>
+            </li>
+        </ul>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -404,7 +404,7 @@
     </div>
     <!-- /.modal --><!--&autoplay=1-->
     <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -420,7 +420,7 @@
         </div>
     </div>
     <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -435,6 +435,81 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="writeReviewFormModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="termsModalLabel">Review for <span>365 Wicks</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive" /></div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <!--<div class="col-md-4">Overall Rating</div>
+                                    <div class="col-md-8">
+                                        <div class="rating">
+                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                        </div>
+                                    </div>-->
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Overall Rating<span class="pdp_form-mandatory">*</span></label>
+                                            <div class="col-sm-10">
+                                                <div class="rating">
+                                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputFullName" class="col-sm-2 control-label">Full Name<span class="pdp_form-mandatory">*</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Email<span class="pdp_form-mandatory">*</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputReview" class="col-sm-2 control-label">Review<span class="pdp_form-mandatory">*</span></label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" rows="3" form="inputReview"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox">  I agree to the <span class="pdp_agree-terms-policy">terms & privacy statement<span class="pdp_form-mandatory">*</span></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn btn-default">Sign in</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-banner">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -442,6 +517,8 @@
     <script src="js/holder.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+    <script src="js/smoothproducts.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
     <script src="js/cart-global.js"></script>
     <script src="js/app.js"></script>
 </body>
