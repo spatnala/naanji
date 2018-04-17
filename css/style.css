@@ -2354,6 +2354,7 @@ svg {
 
 .product_add-cart-btn {
     border: 1px solid #ccc;
+	border-radius:0;
     padding: 10px 8px;
     color: #333;
     font-weight: bold;
@@ -3020,13 +3021,16 @@ position:absolute;
 .pdp_customer-reviews {
 
 }
+.pdp_thumb-img{
+	display:inline-block;
+}
 .pdp_thumb-img ul {
     list-style: none;
     float: left;
     padding: 0;
+	margin-top: 20px;
 }
 .pdp_thumb-img li {
-    height: 90px;
     width: 90px;
     float: left;
     margin: 0 8px;
@@ -3034,4 +3038,21 @@ position:absolute;
 .pdp_thumb-img img {
     width: 100%;
     height: auto;
+}
+.pdp_img-wrapper img{position: static !important;}
+.zoomWindowContainer div{
+	height: 400px !important;
+    width: 585px !important;
+	left:530px !important;
+	border: 1px solid #e22c60 !important;
+}
+.form-control{
+	border-radius:0;
+}
+.flex-direction-nav a:before {
+  font-family: "Font Awesome 5 Brands";
+  content:"\f053";
+}
+.flex-direction-nav a.flex-next:before {
+    content: "\f054";
 }
