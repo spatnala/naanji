@@ -107,7 +107,7 @@
         '<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"style="width:30%">1 Customer</div>',
         '</div>',
         '</li>',
-        '<li><a href="" class="pdp_see-review-btn">See All Reviews</a></li>',
+        '<li><a href="#customerReviews" class="pdp_see-review-btn">See All Reviews</a></li>',
         '</ul>', ].join('');
 
     $('body').popover({
@@ -119,13 +119,37 @@
         html: true
     });
     //REVIEW TOOLTIP END
+    //REVIEW POPOVER BTN SCROLL START
+    $("body").on("click", "a.pdp_see-review-btn", function () {
+        var linkHref = $(document).find("a.pdp_see-review-btn").attr("href");
+        var offset = -160;
+        $('html, body').animate({
+            scrollTop: $(linkHref).offset().top + offset
+        }, 2000);
+        $(this).parents(".timePickerWrapper.popover").removeClass("in");
+    });
+    //REVIEW POPOVER BTN SCROLL END
 
-    var logID = 'log',
-  log = $('<div id="' + logID + '"></div>');
-    $('body').append(log);
-    $('[type*="radio"]').change(function () {
-        var me = $(this);
-        log.html(me.attr('value'));
+    //ZOOM IN IMAGE START
+    //$(".pdp_zoom-image").hover(function () {
+    //    var zoomImg = $(this).attr("src");
+    //    $(this).attr('data-zoom-image', zoomImg);
+    //}, function () {
+    //    $(this).attr('data-zoom-image', '');
+    //});
+    //$(".pdp_zoom-image").elevateZoom({
+    //    zoomType: "inner",
+    //    cursor: "crosshair"
+    //});
+    //ZOOM IN IMAGE END
+    $('.pdp_thumb-img img').click(function () {
+        $('.pdp_zoom-image').attr('src', $(this).attr('src'));
+        $(".pdp_zoom-image").data('zoom-image', $(this).attr('src')).elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            responsive: "true"
+
+        });
     });
     //SHOPPING CART SCRIPT END
 });

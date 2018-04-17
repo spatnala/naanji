@@ -12,8 +12,6 @@
     //GO TO TOP OF THE PAGE
 	$('.product_view-btn').tooltip();
 	
-	
-	
 	/*ON SCROLL FIX THE SEARCH BAR AT TOP START*/
 	var navTop = $('.searchbar').offset().top-120;
 
@@ -73,7 +71,7 @@
 
     $(".main-menus").find("a").click(function () {
         var linkHref = $(this).attr("href");
-        var offset = -132;
+        var offset = -160;
         $('html, body').animate({
             scrollTop: $(linkHref).offset().top + offset
         }, 2000);

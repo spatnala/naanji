@@ -2557,6 +2557,7 @@ svg {
 
     .pdp_container .pdp_img-wrapper {
         text-align: center;
+        padding: 0 50px;
     }
 
     .pdp_container .pdp_product-details-wrapper {
@@ -3012,4 +3013,25 @@ font-weight: bold;
 /*FORM STAR RATING END*/
 .modal.vdoModal .modal-header {
 position:absolute;
+}
+.pdp_features-list {
+    padding-left: 16px;
+}
+.pdp_customer-reviews {
+
+}
+.pdp_thumb-img ul {
+    list-style: none;
+    float: left;
+    padding: 0;
+}
+.pdp_thumb-img li {
+    height: 90px;
+    width: 90px;
+    float: left;
+    margin: 0 8px;
+}
+.pdp_thumb-img img {
+    width: 100%;
+    height: auto;
 }
