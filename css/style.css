@@ -2347,7 +2347,6 @@ svg {
 .product_name {
     font-weight: bold;
     margin-top: 12px;
-    margin-bottom: 20px;
     font-size: 16px;
     color: #e22c60;
 }
@@ -2447,6 +2446,7 @@ svg {
     .product_items.product_list-view .product_image-wrapper {
         width: 30%;
         display: table-cell;
+        vertical-align: middle;
     }
 
     .product_items.product_list-view .product_body-details {
@@ -2463,6 +2463,7 @@ svg {
     .product_items.product_list-view .product_name {
         margin-top: 0;
         margin-bottom: 6px;
+        font-size: 26px;
     }
 
     .product_items.product_list-view .product_features {
@@ -2897,6 +2898,7 @@ svg {
     .pdp_share-compare-container .pdp_share-tab, .pdp_share-compare-container .pdp_compare-tab {
         position: absolute;
         top: 42px;
+        z-index: 1;
     }
 
 .pdp_compare-tab ul li.pdp_compare-drag-n-drop {
@@ -3019,7 +3021,7 @@ position:absolute;
     padding-left: 16px;
 }
 .pdp_customer-reviews {
-
+padding: 0;
 }
 .pdp_thumb-img{
 	display:inline-block;
@@ -3049,10 +3051,105 @@ position:absolute;
 .form-control{
 	border-radius:0;
 }
-.flex-direction-nav a:before {
-  font-family: "Font Awesome 5 Brands";
-  content:"\f053";
+
+.product_star-ratings{
+display: block;
+    cursor: pointer;
 }
-.flex-direction-nav a.flex-next:before {
-    content: "\f054";
+.left{
+    float: left;
 }
+.p-100{
+    width: 100%;
+}
+.pdp_recommend-title{
+    display: block;
+    color: #e22c60;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.pdp_recommend-price{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*PDP CUSTOMER REVIEW PAGINATION START*/
+.pdp_review-pagination-container{
+
+}
+.pdp_review-pagination-container ul{
+list-style: none;
+    padding: 0;
+}
+
+.pdp_review-pagination-container li{
+margin: 16px 0;
+border-bottom: 1px solid #ccc;
+}
+
+.pdp_review-pagination-container li:last-child{
+border-bottom:none;
+}
+
+.pdp_review-customer-details-wrapper{
+    text-align: center;
+}
+.pdp_review-customer-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.pdp_review-customer-location{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.pdp_review-up-down-vote-container{
+}
+.pdp_review-up-down-vote-container a{
+    font-size: 40px;
+    line-height: 36px;
+}
+.pdp_review-up-down-vote-container span{
+display: block;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-top: 2px;
+}
+.pdp_customer-ratings{
+    margin: 0 auto;
+    float: none;
+}
+.display-table{
+    display: table;
+}
+.vert-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+.pdp_customer-review-details{
+    min-height: 200px;
+}
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
+.flexslider{
+    overflow: hidden;
+}
+.pagination-lg.pagination{
+    padding-left: 40px;
+}
+.flex-direction-nav a {
+    width: 50px;
+    height: 50px;
+    top: 32%;
+    }
+/*PDP CUSTOMER REVIEW PAGINATION END*/

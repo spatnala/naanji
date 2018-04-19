@@ -1,338 +1,565 @@
-﻿<!DOCTYPE html>
-<html lang="en" ng-app="naanjiSite">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+﻿    <!DOCTYPE html>
+    <html lang="en" ng-app="naanjiSite">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
 
-    <title>Naanji eShop | Online Shopping Cart</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-    <!--<link href="css/animate.css" rel="stylesheet">-->
-    <link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <title>Naanji eShop | Online Shopping Cart</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/flexslider.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!--<link href="css/animate.css" rel="stylesheet">-->
+        <link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 
-    <![endif]-->
-    <!-- Custom styles for this template -->
-</head>
-<!-- NAVBAR
-================================================== -->
-<body>
+      <![endif]-->
+      <!-- Custom styles for this template -->
+    </head>
+    <!-- NAVBAR
+        ================================================== -->
+        <body>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="row top-menu">
-            <div class="container">
-                <div id="naanji-navbar">
-                    <div class="row row1">
-                        <div class="col-sm-3">
-                            <div class="footer_block top-sm-icons">
-                                <ul class="socials">
-                                    <li>
-                                        Follow us on :
-                                    </li>
-                                    <li>
-                                        <a class="socialTwitter" href="https://twitter.com/naanjistudios" target="_blank">
-                                            <i class="fab fa-twitter">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="socialFacebook" href="https://www.facebook.com/naanjicreativestudios/" target="_blank">
-                                            <i class="fab fa-facebook-f">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <!--<li>
-                                        <a class="socialGoogle" href="#" target="_blank">
-                                            <i class="fab fa-google-plus-g">
-                                            </i>
-                                        </a>
-                                    </li>-->
-                                    <li>
-                                        <a class="socialGoogle" href="https://www.youtube.com/naanjicreativestudios" target="_blank">
-                                            <i class="fab fa-youtube">
-                                            </i>
-                                        </a>
-                                    </li>
-                                </ul>
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="row top-menu">
+                    <div class="container">
+                        <div id="naanji-navbar">
+                            <div class="row row1">
+                                <div class="col-sm-3">
+                                    <div class="footer_block top-sm-icons">
+                                        <ul class="socials">
+                                            <li>
+                                                Follow us on :
+                                            </li>
+                                            <li>
+                                                <a class="socialTwitter" href="https://twitter.com/naanjistudios" target="_blank">
+                                                    <i class="fab fa-twitter">
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="socialFacebook" href="https://www.facebook.com/naanjicreativestudios/" target="_blank">
+                                                    <i class="fab fa-facebook-f">
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        <!--<li>
+                                            <a class="socialGoogle" href="#" target="_blank">
+                                                <i class="fab fa-google-plus-g">
+                                                </i>
+                                            </a>
+                                        </li>-->
+                                        <li>
+                                            <a class="socialGoogle" href="https://www.youtube.com/naanjicreativestudios" target="_blank">
+                                                <i class="fab fa-youtube">
+                                                </i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
+                            <div class="col-md-5">
+                                <div class="cart-searchbar cart-search-bar">
+                                    <div class="smallsearch col-md-12 col-xs-12">
 
-                        </div>
-                        <div class="col-md-5">
-                            <div class="cart-searchbar cart-search-bar">
-                                <div class="smallsearch col-md-12 col-xs-12">
+                                        <input class="naanji-navbar-input col-xs-11" type="text" placeholder="Search for wicks, jewellery and many more" name="" />
+                                        <!-- ng-model="naanjiSearch.searchName"-->
+                                        <span class="glyphicon glyphicon-remove search-clear hide" ng-click="clearFilter()"></span>
+                                        <button class="naanji-navbar-button col-xs-1">
+                                            <svg width="15px" height="15px">
+                                                <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                                            </svg>
+                                        </button>
 
-                                    <input class="naanji-navbar-input col-xs-11" type="text" placeholder="Search for wicks, jewellery and many more" name="" />
-                                    <!-- ng-model="naanjiSearch.searchName"-->
-                                    <span class="glyphicon glyphicon-remove search-clear hide" ng-click="clearFilter()"></span>
-                                    <button class="naanji-navbar-button col-xs-1">
-                                        <svg width="15px" height="15px">
-                                            <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
-                                        </svg>
-                                    </button>
-
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul class="largenav pull-right">
-                                <li class="upper-links"><a class="links" href="#">Signin</a></li>
-                                <li class="upper-links"><a class="links" href="#">Signup</a></li>
-                                <li class="upper-links"><a class="links" href="#">Guest</a></li>
-                                <li class="upper-links cart-link">
-                                    <div class="cart largenav">
-                                        <a class="cart-button">
-                                            <svg class="cart-svg eShop-cart-symbol" width="16 " height="16 " viewBox="0 0 16 16 ">
-                                                <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
-                                            </svg>
-                                            <span class="item-number ">0</span>
-                                            <span>Check out</span>
-                                        </a>
-                                    </div>
-                                </li>
+                            <div class="col-sm-4">
+                                <ul class="largenav pull-right">
+                                    <li class="upper-links"><a class="links" href="#">Signin</a></li>
+                                    <li class="upper-links"><a class="links" href="#">Signup</a></li>
+                                    <li class="upper-links"><a class="links" href="#">Guest</a></li>
+                                    <li class="upper-links cart-link">
+                                        <div class="cart largenav">
+                                            <a class="cart-button">
+                                                <svg class="cart-svg eShop-cart-symbol" width="16 " height="16 " viewBox="0 0 16 16 ">
+                                                    <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                                                </svg>
+                                                <span class="item-number ">0</span>
+                                                <span>Check out</span>
+                                            </a>
+                                        </div>
+                                    </li>
 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--top menu end-->
+            <div class="container">
+                <div class="col-xs-12 col-sm-2">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand eShop-logo" href="#">
+                            <img src="images/brand-logo.png" alt="First slide">
+                            <span class="logo-slogan">Qualitee, Guarantee..</span>
+                        </a>
+                    </div>
+                </div>
+                <!--Logo-->
+                <div class="col-xs-12 col-sm-10">
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav main-menus">
+                            <li><a href="#rangoli">Wicks / Vattulu</a></li>
+                            <li><a href="#rangoli">Silk Thread Jewellery</a></li>
+                            <li><a href="#rangoli">1 gm Gold Jewellery</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle menu-btn-overwrite" type="button" data-toggle="dropdown" data-hover="dropdown">
+                                        <img src="images/new-icon.png" class="hidden-xs show-sm" />
+                                        Pooja Stores <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#veg-recp">Yantralu</a></li>
+                                        <li><a href="#non-veg-recp">Javvadhi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Header col 2-->
+            </div>
+        </div>
+
+
+        <!-- Carousel
+            ================================================== -->
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item banner active">
+                    </div>
+                </div>
+
+            <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
+          </div>
+          <!-- /.carousel -->
+          <!--PARALLAX SCROLLING START-->
+          <div class="container">
+
+            <div class="row pdp_container">
+                <div class='col-md-6 pdp_img-wrapper'>
+                    <img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive pdp_zoom-image" />
+                    <div class="pdp_thumb-img">
+                        <ul>
+                            <li>
+                                <a><img src="images/video-thumbs/wicks/ardhanareshwara-vatti.jpg" /></a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="images/video-thumbs/wicks/astalakshmi-vattulu.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a><img src="images/video-thumbs/wicks/puvvothulu.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='col-md-6 pdp_product-details-wrapper'>
+                        <h3 class="pdp_product-title">365 Wicks | గరం మసాలా</h3>
+                        <hr />
+                        <p class="pdp_prod-desc">Purely made with Hand and used the fresh pure cotton to make these wicks, these wicks can be used for daily puja or on auspecious days.</p>
+                        <div class="pdp_reviews-wrapper">
+                            <div class="pdp_star-ratings pdp_star-popup" data-toggle="popover" title="Total Review Ratings">
+                                <span class="pdp_rating-stars"> ★★★★★ </span>
+                                <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                            </div>
+                            <div class="pdp_star-average-count">4.8(1230)</div>
+                            <div class="pdp_write-review">
+                                <a href='#' data-toggle="modal" data-target="#writeReviewFormModal">Write a review</a>
+                            </div>
+
+                        <!--<div class="popover fade bottom in pdp_review-tooltip">
+                            <div class="arrow"></div>
+                            <h3 class="popover-title" style="display: none;"></h3>
+                            <div class="popover-content">Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</div>
+                        </div>-->
+
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="pdp_mrp-price-wrapper">
+                                <span class="pdp_mrp-price-text">M.R.P:</span>
+                                <span class="pdp_mrp-price-value"><del>₹999.00</del></span>
+                            </p>
+                            <p class="pdp_offer-price-wrapper">
+                                <span class="pdp_offer-price-text">Offer Price:</span>
+                                <span class="pdp_offer-price-value">₹849.00</span>
+                            </p>
+                            <p class="pdp_you-save-wrapper">
+                                <span class="pdp_you-save-text">You Save:</span>
+                                <span class="pdp_you-save-value">₹150.00 (15%)</span>
+                            </p>
+                            <p class="pdp_tax-info"><span>(Inclusive of all taxes)</span></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class=''><b>Features:</b></p>
+                            <ul class='pdp_features-list'>
+                                <li>Hand made, Make In INDIA</li>
+                                <li>Can be used on festival / auspecious poojas</li>
+                                <li>Can be used for daily pooja</li>
+                                <li>Used pure cotton, and Pure Vibuthi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="pdp_share-compare-container">
+                        <a href="" class="product_add-cart-btn">Add To Cart</a>
+                        <a href="" class="product_add-cart-btn pdp-share-btn">Share</a>
+                        <a href="" class="product_add-cart-btn pdp-compare-btn">Compare</a>
+                        <div class="pdp_share-tab hide">
+                            <ul>
+                                <li class="facebook">
+                                    <a href="#">Facebook<i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#">Twitter<i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="watsapp">
+                                    <a href="#">Watsapp<i class="fab fa-whatsapp"></i></a>
+                                </li>
+                                <li class="pinterest">
+                                    <a href="#">Pinterest<i class="fab fa-pinterest-p"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pdp_compare-tab hide">
+                            <ul>
+                                <li class="">
+                                    <a href="#">
+                                        <img src="images/video-thumbs/wicks/365-wicks.jpg" />
+                                    </a>
+                                </li>
+                                <li class="pdp_compare-drag-n-drop">
+                                    <a href="#">
+                                    </a>
+                                </li>
+                                <li class="pdp_compare-drag-n-drop">
+                                    <a href="#">
+                                    </a>
+                                </li>
+                                <li class="pdp_compare-drag-n-drop">
+                                    <a href="#">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pdp_compare-products">Compare</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--top menu end-->
         <div class="container">
-            <div class="col-xs-12 col-sm-2">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand eShop-logo" href="#">
-                        <img src="images/brand-logo.png" alt="First slide">
-                        <span class="logo-slogan">Qualitee, Guarantee..</span>
-                    </a>
-                </div>
-            </div>
-            <!--Logo-->
-            <div class="col-xs-12 col-sm-10">
+            <h3>Suggestions will come here.</h3>
+        
+                <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12">
 
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav main-menus">
-                        <li><a href="#rangoli">Wicks / Vattulu</a></li>
-                        <li><a href="#rangoli">Silk Thread Jewellery</a></li>
-                        <li><a href="#rangoli">1 gm Gold Jewellery</a></li>
+                    <div class="flexslider" style="direction:rtl">
+                      <ul class="slides">
                         <li>
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle menu-btn-overwrite" type="button" data-toggle="dropdown" data-hover="dropdown">
-                                    <img src="images/new-icon.png" class="hidden-xs show-sm" />
-                                    Pooja Stores <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#veg-recp">Yantralu</a></li>
-                                    <li><a href="#non-veg-recp">Javvadhi</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--Header col 2-->
-        </div>
+                          <img src="images/video-thumbs/wicks/108-wicks.jpg" />
+                          <p class="pdp_recommend-title">108 Wicks</p>
+                          <p class="pdp_recommend-price">₹500.00</p>
+                    </li>
+                    <li>
+                      <img src="images/video-thumbs/wicks/365-wicks.jpg" />
+                      <p class="pdp_recommend-title">108 Wicks</p>
+                          <p class="pdp_recommend-price">₹500.00</p>
+                  </li>
+                  <li>
+                      <img src="images/video-thumbs/wicks/akhanda-vatti.jpg" />
+                      <p class="pdp_recommend-title">108 Wicks</p>
+                          <p class="pdp_recommend-price">₹500.00</p>
+                  </li>
+                  <li>
+                      <img src="images/video-thumbs/wicks/ardhanareshwara-vatti.jpg" />
+                      <p class="pdp_recommend-title">108 Wicks</p>
+                          <p class="pdp_recommend-price">₹500.00</p>
+                  </li>
+                  <li>
+                      <img src="images/video-thumbs/wicks/astalakshmi-vattulu.jpg" />
+                      <p class="pdp_recommend-title">108 Wicks</p>
+                          <p class="pdp_recommend-price">₹500.00</p>
+                  </li>
+                  <li>
+                      <img src="images/video-thumbs/wicks/floating-wicks.jpg" />
+                      <p class="pdp_recommend-title">108 Wicks</p>
+                          <p class="pdp_recommend-price">₹500.00</p>
+                  </li>
+                  <!-- items mirrored twice, total of 12 -->
+              </ul>
+          </div>
+      </div>
+
     </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="item banner active">
-            </div>
-        </div>
-
-        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
     </div>
-    <!-- /.carousel -->
-    <!--PARALLAX SCROLLING START-->
-    <div class="container">
-
-        <div class="row pdp_container">
-            <div class='col-md-6 pdp_img-wrapper'>
-                <img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive pdp_zoom-image" />
-                <div class="pdp_thumb-img">
-                    <ul>
-                        <li>
-                            <a><img src="images/video-thumbs/wicks/ardhanareshwara-vatti.jpg" /></a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="images/video-thumbs/wicks/astalakshmi-vattulu.jpg" /></a>
-                        </li>
-                        <li>
-                            <a><img src="images/video-thumbs/wicks/puvvothulu.jpg" /></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class='col-md-6 pdp_product-details-wrapper'>
-                <h3 class="pdp_product-title">365 Wicks | గరం మసాలా</h3>
-                <hr />
-                <p class="pdp_prod-desc">Purely made with Hand and used the fresh pure cotton to make these wicks, these wicks can be used for daily puja or on auspecious days.</p>
-                <div class="pdp_reviews-wrapper">
-                    <div class="pdp_star-ratings" data-toggle="popover" title="Total Review Ratings">
+    </div>
+        <div class="container pdp_customer-reviews" id="customerReviews">
+            <h3>Customer Reviews will come here.</h3>
+        </div>
+        <div class="row">
+   <div class="col-md-12 page pdp_review-pagination-container" id="page1">
+      <ul class="">
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 01</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
                         <span class="pdp_rating-stars"> ★★★★★ </span>
                         <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
                     </div>
-                    <div class="pdp_star-average-count">4.8(1230)</div>
-                    <div class="pdp_write-review">
-                        <a href='#' data-toggle="modal" data-target="#writeReviewFormModal">Write a review</a>
-                    </div>
-
-                    <!--<div class="popover fade bottom in pdp_review-tooltip">
-                        <div class="arrow"></div>
-                        <h3 class="popover-title" style="display: none;"></h3>
-                        <div class="popover-content">Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</div>
-                    </div>-->
-
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="pdp_mrp-price-wrapper">
-                            <span class="pdp_mrp-price-text">M.R.P:</span>
-                            <span class="pdp_mrp-price-value"><del>₹999.00</del></span>
-                        </p>
-                        <p class="pdp_offer-price-wrapper">
-                            <span class="pdp_offer-price-text">Offer Price:</span>
-                            <span class="pdp_offer-price-value">₹849.00</span>
-                        </p>
-                        <p class="pdp_you-save-wrapper">
-                            <span class="pdp_you-save-text">You Save:</span>
-                            <span class="pdp_you-save-value">₹150.00 (15%)</span>
-                        </p>
-                        <p class="pdp_tax-info"><span>(Inclusive of all taxes)</span></p>
-                    </div>
-                    <div class="col-md-8">
-                        <p class=''><b>Features:</b></p>
-                        <ul class='pdp_features-list'>
-                            <li>Hand made, Make In INDIA</li>
-                            <li>Can be used on festival / auspecious poojas</li>
-                            <li>Can be used for daily pooja</li>
-                            <li>Used pure cotton, and Pure Vibuthi</li>
-                        </ul>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class="pdp_up-vote"><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class="pdp_down-vote"><i class="fas fa-caret-down"></i></a>
                     </div>
                 </div>
-
-                <hr />
-                <div class="pdp_share-compare-container">
-                    <a href="" class="product_add-cart-btn">Add To Cart</a>
-                    <a href="" class="product_add-cart-btn pdp-share-btn">Share</a>
-                    <a href="" class="product_add-cart-btn pdp-compare-btn">Compare</a>
-                    <div class="pdp_share-tab hide">
-                        <ul>
-                            <li class="facebook">
-                                <a href="#">Facebook<i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li class="twitter">
-                                <a href="#">Twitter<i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="watsapp">
-                                <a href="#">Watsapp<i class="fab fa-whatsapp"></i></a>
-                            </li>
-                            <li class="pinterest">
-                                <a href="#">Pinterest<i class="fab fa-pinterest-p"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="pdp_compare-tab hide">
-                        <ul>
-                            <li class="">
-                                <a href="#">
-                                    <img src="images/video-thumbs/wicks/365-wicks.jpg" />
-                                </a>
-                            </li>
-                            <li class="pdp_compare-drag-n-drop">
-                                <a href="#">
-                                </a>
-                            </li>
-                            <li class="pdp_compare-drag-n-drop">
-                                <a href="#">
-                                </a>
-                            </li>
-                            <li class="pdp_compare-drag-n-drop">
-                                <a href="#">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="pdp_compare-products">Compare</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <h3>Suggestions will come here.</h3>
-    </div>
-    <div class="container pdp_customer-reviews" id="customerReviews">
-        <h3>Customer Reviews will come here.</h3>
-    </div>
-    <div class="container">
-        <div class="col-md-12">
-            <div class="col-md-12">
-                
-				<div class="flexslider" style="direction:rtl">
-  <ul class="slides">
-    <li>
-      <img src="images/video-thumbs/wicks/108-wicks.jpg" />
-    </li>
-    <li>
-      <img src="images/video-thumbs/wicks/365-wicks.jpg" />
-    </li>
-    <li>
-      <img src="images/video-thumbs/wicks/akhanda-vatti.jpg" />
-    </li>
-    <li>
-      <img src="images/video-thumbs/wicks/ardhanareshwara-vatti.jpg" />
-    </li>
-	<li>
-      <img src="images/video-thumbs/wicks/astalakshmi-vattulu.jpg" />
-    </li>
-    <li>
-      <img src="images/video-thumbs/wicks/floating-wicks.jpg" />
-    </li>
-    <!-- items mirrored twice, total of 12 -->
-  </ul>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 02</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 03</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+   </div>
+      <div class="col-md-12 page pdp_review-pagination-container" id="page2">
+      <ul class="">
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 04</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 05</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 06</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+   </div>
+      <div class="col-md-12 page pdp_review-pagination-container" id="page3">
+      <ul class="">
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 07</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 08</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-md-4 pdp_review-customer-details-wrapper">
+                    <p class="pdp_review-customer-name">Customer Full Name 09</p>
+                    <p class="pdp_review-customer-location">Ameerpet, Hyderabad, India</p>
+                    <div class="pdp_star-ratings pdp_customer-ratings" data-toggle="popover" title="Total Review Ratings">
+                        <span class="pdp_rating-stars"> ★★★★★ </span>
+                        <span class="pdp_rating-stars pdp_rating-stars-on pdp_ratings-4"> ★★★★★ </span>
+                    </div>
+                    <div class="pdp_review-up-down-vote-container">
+                        <a class=""><i class="fas fa-caret-up"></i></a>
+                        <span class="">9</span>
+                        <a class=""><i class="fas fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 display-table pdp_customer-review-details">
+                    <div class="vert-middle">
+                    <p><b>Customer Review Title Will Come Here</b></p>
+                    <p>Customer Reviews Will Appear Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+   </div>
+   <ul id="pagination-demo" class="pagination-lg pull-right pagination col-md-7 col-md-pull-1"></ul>
 </div>
-            </div>
 
-        </div>
-    </div>
     <!-- /END THE FEATURETTES -->
 
-    <div class="container">
-        <h3>Product Specifications</h3>
-        <ul>
-            <li>
-                <span>Material</span>
-                <span>Cotton</span>
-            </li>
-        </ul>
-    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -363,179 +590,192 @@
                                         </i>
                                     </a>
                                 </li>
-                                <!--<li>
-                                    <a class="socialGoogle" href="#" target="_blank">
-                                        <i class="fab fa-google-plus-g">
-                                        </i>
-                                    </a>
-                                </li>-->
-                                <li>
-                                    <a class="socialGoogle" href="https://www.youtube.com/naanjicreativestudios" target="_blank">
-                                        <i class="fab fa-youtube">
-                                        </i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timingsWrapper footer-menu">
-                            <a href="#" data-toggle="modal" data-target="#privacyPolicyModal">Privacy Policy</a>
+                                    <!--<li>
+                                        <a class="socialGoogle" href="#" target="_blank">
+                                            <i class="fab fa-google-plus-g">
+                                            </i>
+                                        </a>
+                                    </li>-->
+                                    <li>
+                                        <a class="socialGoogle" href="https://www.youtube.com/naanjicreativestudios" target="_blank">
+                                            <i class="fab fa-youtube">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="timingsWrapper footer-menu">
+                                <a href="#" data-toggle="modal" data-target="#privacyPolicyModal">Privacy Policy</a>
 
-                            <a href="#" data-toggle="modal" data-target="#termsModal">Terms and Conditions</a>
+                                <a href="#" data-toggle="modal" data-target="#termsModal">Terms and Conditions</a>
 
-                            <!--<a href="#">Feedback</a>
+                                <!--<a href="#">Feedback</a>
 
 
-                            <a href="#">Contact</a>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--<div class="toTop hidden-xs hidden-sm" pointer>
-        <span class="topIcon">
-            <i class="fa fa-chevron-down"></i>
-        </span><span class="topText">Up</span>
-    </div>-->
-    <div class="modal fade vdoModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel"></h4>
-                </div>
-                <div class="modal-body">
-                    <iframe width="100%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-                <div class="modal-footer">
-                    <span class="buy-now-text">This item is available in our online store.</span>
-                    <button type="button" class="btn btn-primary btn-banner modal-buy-btn">Buy Now</button>
-                    <button type="button" class="btn btn-primary modal-buy-btn">Browse more items</button>
-                    <button type="button" class="btn btn-primary btn-banner modal-close-btn" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.modal --><!--&autoplay=1-->
-    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h4>
-                </div>
-                <div class="modal-body">
-                    Coming Soon
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn-banner">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="termsModalLabel">Terms and Conditions</h4>
-                </div>
-                <div class="modal-body">
-                    Coming Soon
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn-banner">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="writeReviewFormModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="termsModalLabel">Review for <span>365 Wicks</span></h4>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive" /></div>
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <!--<div class="col-md-4">Overall Rating</div>
-                                    <div class="col-md-8">
-                                        <div class="rating">
-                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                                        </div>
-                                    </div>-->
-                                    <form class="form-horizontal" role="form">
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Overall Rating<span class="pdp_form-mandatory">*</span></label>
-                                            <div class="col-sm-10">
-                                                <div class="rating">
-                                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputFullName" class="col-sm-2 control-label">Full Name<span class="pdp_form-mandatory">*</span></label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputEmail3" class="col-sm-2 control-label">Email<span class="pdp_form-mandatory">*</span></label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputReview" class="col-sm-2 control-label">Review<span class="pdp_form-mandatory">*</span></label>
-                                            <div class="col-sm-10">
-                                                <textarea class="form-control" rows="3" form="inputReview"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-2 col-sm-10">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox">  I agree to the <span class="pdp_agree-terms-policy">terms & privacy statement<span class="pdp_form-mandatory">*</span></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" class="btn btn-default product_add-cart-btn">Sign in</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <a href="#">Contact</a>-->
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                </div>
+            </footer>
+        <!--<div class="toTop hidden-xs hidden-sm" pointer>
+            <span class="topIcon">
+                <i class="fa fa-chevron-down"></i>
+            </span><span class="topText">Up</span>
+        </div>-->
+        <div class="modal fade vdoModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="buy-now-text">This item is available in our online store.</span>
+                        <button type="button" class="btn btn-primary btn-banner modal-buy-btn">Buy Now</button>
+                        <button type="button" class="btn btn-primary modal-buy-btn">Browse more items</button>
+                        <button type="button" class="btn btn-primary btn-banner modal-close-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- /.modal --><!--&autoplay=1-->
+        <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h4>
+                    </div>
+                    <div class="modal-body">
+                        Coming Soon
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-banner">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="termsModalLabel">Terms and Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                        Coming Soon
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-banner">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-dropdownhover.min.js"></script>
-    <script src="js/holder.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-    <script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
-    <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/cart-global.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-        $(function () {
-            
-        });
-    </script>
-</body>
-</html>
+        <div class="modal fade" id="writeReviewFormModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="termsModalLabel">Review for <span>365 Wicks</span></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3"><img src="images/video-thumbs/wicks/365-wicks.jpg" class="img-responsive" /></div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <!--<div class="col-md-4">Overall Rating</div>
+                                        <div class="col-md-8">
+                                            <div class="rating">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                            </div>
+                                        </div>-->
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Overall Rating<span class="pdp_form-mandatory">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <div class="rating">
+                                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputReviewTitle" class="col-sm-2 control-label">Review Title<span class="pdp_form-mandatory">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputReviewTitle" placeholder="Example: Excellent Product...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputReview" class="col-sm-2 control-label">Review<span class="pdp_form-mandatory">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" rows="3" form="inputReview" placeholder="Example: I bought this product a month ago, and I am very happy about this product."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputFullName" class="col-sm-2 control-label">Full Name<span class="pdp_form-mandatory">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Email<span class="pdp_form-mandatory">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputFullName" class="col-sm-2 control-label">Location<span class="pdp_form-mandatory">*</span></label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputFullName" placeholder="Example: Ameerpet, Hyderabad, India">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">  I agree to the <span class="pdp_agree-terms-policy">terms & privacy statement<span class="pdp_form-mandatory">*</span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" class="btn btn-default product_add-cart-btn">Sign in</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-dropdownhover.min.js"></script>
+        <script src="js/holder.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+        <script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+        <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/jquery.twbsPagination.js"></script>
+        <script src="js/cart-global.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            $(function () {
+
+            });
+        </script>
+    </body>
+    </html>
