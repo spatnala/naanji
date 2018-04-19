@@ -2773,6 +2773,12 @@ svg {
 .modal-dialog.modal-lg {
     width: 90%;
 }
+.modal-dialog.modal-md {
+    width: 60%;
+}
+.modal-dialog.modal-sm {
+    width: 40%;
+}
 
 .pdp-share-btn {
     margin: 0 52px;
@@ -3050,6 +3056,8 @@ padding: 0;
 }
 .form-control{
 	border-radius:0;
+    box-shadow: none;
+    height: 42px;
 }
 
 .product_star-ratings{
@@ -3153,3 +3161,50 @@ display: block;
     top: 32%;
     }
 /*PDP CUSTOMER REVIEW PAGINATION END*/
+
+/*LOGIN SIGNUP STYLES START*/
+#loginSignupModal .close{
+    position: relative;
+    top: -36px;
+    font-size: 42px;
+    opacity: 0.8;
+    color: #e22c60;
+}
+.login-signup-container{
+margin: 0;
+}
+.login-signup-text-wrapper{
+    display: table;
+    min-height: 315px;
+    background-color: #e22c60;
+}
+.login-signup-text-wrapper .loginWrapper{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+.login-signup-text-wrapper .loginWrapper h2{
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+    margin: 0 0 6px 0;
+}
+.login-signup-text-wrapper .loginWrapper p{
+    color: #fff;
+}
+.loginWrapper .form-group{
+    float: left;
+    width: 100%;
+}
+.signup-wrapper-slogan p, .login-wrapper-slogan p{
+font-size: 12px;
+float: left;
+    margin-top: 8px;
+}
+.login-signup-container .loginWrapper {
+    margin-top: 42px;
+}
+.signinWrapper{
+        /*margin-top: 42px;*/
+}
+/*LOGIN SIGNUP STYLES START*/
