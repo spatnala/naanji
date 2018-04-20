@@ -2079,7 +2079,6 @@ svg {
 .modal-body {
     padding: 0;
     background-color: #fff;
-    height: 315px;
 }
 
 .modal-backdrop.in {
@@ -2353,7 +2352,7 @@ svg {
 
 .product_add-cart-btn {
     border: 1px solid #ccc;
-	border-radius:0;
+    border-radius: 0;
     padding: 10px 8px;
     color: #333;
     font-weight: bold;
@@ -2773,9 +2772,11 @@ svg {
 .modal-dialog.modal-lg {
     width: 90%;
 }
+
 .modal-dialog.modal-md {
     width: 60%;
 }
+
 .modal-dialog.modal-sm {
     width: 40%;
 }
@@ -2989,7 +2990,7 @@ ul.pdp_progress-bar-wrapper {
 .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
-        float: left;
+    float: left;
 }
 
     .rating > span {
@@ -2997,7 +2998,7 @@ ul.pdp_progress-bar-wrapper {
         position: relative;
         font-size: 35px;
         color: #e22c60;
-            line-height: 30px;
+        line-height: 30px;
     }
 
         .rating > span:hover:before,
@@ -3009,202 +3010,303 @@ ul.pdp_progress-bar-wrapper {
 #writeReviewFormModal form.form-horizontal {
     padding-right: 40px;
 }
+
 .pdp_agree-terms-policy {
-font-weight: bold;
+    font-weight: bold;
 }
+
 .pdp_form-mandatory {
-color:#e22c60;
-font-weight: bold;
+    color: #e22c60;
+    font-weight: bold;
 }
+
 #writeReviewFormModal .modal-content {
     overflow-y: auto;
 }
 /*FORM STAR RATING END*/
 .modal.vdoModal .modal-header {
-position:absolute;
+    position: absolute;
 }
+
 .pdp_features-list {
     padding-left: 16px;
 }
+
 .pdp_customer-reviews {
-padding: 0;
-}
-.pdp_thumb-img{
-	display:inline-block;
-}
-.pdp_thumb-img ul {
-    list-style: none;
-    float: left;
     padding: 0;
-	margin-top: 20px;
 }
-.pdp_thumb-img li {
-    width: 90px;
-    float: left;
-    margin: 0 8px;
+
+.pdp_thumb-img {
+    display: inline-block;
 }
-.pdp_thumb-img img {
-    width: 100%;
-    height: auto;
+
+    .pdp_thumb-img ul {
+        list-style: none;
+        float: left;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .pdp_thumb-img li {
+        width: 90px;
+        float: left;
+        margin: 0 8px;
+    }
+
+    .pdp_thumb-img img {
+        width: 100%;
+        height: auto;
+    }
+
+.pdp_img-wrapper img {
+    position: static !important;
 }
-.pdp_img-wrapper img{position: static !important;}
-.zoomWindowContainer div{
-	height: 400px !important;
+
+.zoomWindowContainer div {
+    height: 400px !important;
     width: 585px !important;
-	left:530px !important;
-	border: 1px solid #e22c60 !important;
+    left: 530px !important;
+    border: 1px solid #e22c60 !important;
 }
-.form-control{
-	border-radius:0;
+
+.form-control {
+    border-radius: 0;
     box-shadow: none;
     height: 42px;
 }
 
-.product_star-ratings{
-display: block;
+.product_star-ratings {
+    display: block;
     cursor: pointer;
 }
-.left{
+
+.left {
     float: left;
 }
-.p-100{
+
+.right {
+    float: right;
+}
+
+.p-100 {
     width: 100%;
 }
-.pdp_recommend-title{
+
+.pdp_recommend-title {
     display: block;
     color: #e22c60;
     font-weight: bold;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 4px;
     font-size: 18px;
     margin-bottom: 0;
 }
-.pdp_recommend-price{
+
+.pdp_recommend-price {
     display: block;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    margin-top: 4px;
 }
 /*PDP CUSTOMER REVIEW PAGINATION START*/
-.pdp_review-pagination-container{
-
-}
-.pdp_review-pagination-container ul{
-list-style: none;
-    padding: 0;
+.pdp_review-pagination-container {
 }
 
-.pdp_review-pagination-container li{
-margin: 16px 0;
-border-bottom: 1px solid #ccc;
-}
+    .pdp_review-pagination-container ul {
+        list-style: none;
+        padding: 0;
+    }
 
-.pdp_review-pagination-container li:last-child{
-border-bottom:none;
-}
+    .pdp_review-pagination-container li {
+        margin: 16px 0;
+        border-bottom: 1px solid #ccc;
+    }
 
-.pdp_review-customer-details-wrapper{
+        .pdp_review-pagination-container li:last-child {
+            border-bottom: none;
+        }
+
+.pdp_review-customer-details-wrapper {
     text-align: center;
 }
-.pdp_review-customer-name{
+
+.pdp_review-customer-name {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
 }
-.pdp_review-customer-location{
+
+.pdp_review-customer-location {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 0;
 }
-.pdp_review-up-down-vote-container{
+
+.pdp_review-up-down-vote-container {
 }
-.pdp_review-up-down-vote-container a{
-    font-size: 40px;
-    line-height: 36px;
-}
-.pdp_review-up-down-vote-container span{
-display: block;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 28px;
-    margin-top: 2px;
-}
-.pdp_customer-ratings{
+
+    .pdp_review-up-down-vote-container a {
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .pdp_review-up-down-vote-container span {
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: 2px;
+    }
+
+.pdp_customer-ratings {
     margin: 0 auto;
     float: none;
 }
-.display-table{
+
+.display-table {
     display: table;
 }
-.vert-middle{
+
+.vert-middle {
     display: table-cell;
     vertical-align: middle;
 }
-.pdp_customer-review-details{
+
+.pdp_customer-review-details {
     min-height: 200px;
 }
+
 .page {
-  display: none;
+    display: none;
 }
+
 .page-active {
-  display: block;
+    display: block;
 }
-.flexslider{
+
+.flexslider {
     overflow: hidden;
 }
-.pagination-lg.pagination{
+
+.pagination-lg.pagination {
     padding-left: 40px;
 }
+
 .flex-direction-nav a {
     width: 50px;
     height: 50px;
     top: 32%;
-    }
+}
 /*PDP CUSTOMER REVIEW PAGINATION END*/
 
 /*LOGIN SIGNUP STYLES START*/
-#loginSignupModal .close{
+#loginSignupModal .close {
     position: relative;
     top: -36px;
     font-size: 42px;
     opacity: 0.8;
     color: #e22c60;
 }
-.login-signup-container{
-margin: 0;
+
+.login-signup-container {
+    margin: 0;
 }
-.login-signup-text-wrapper{
+
+.login-signup-text-wrapper {
     display: table;
-    min-height: 315px;
+    min-height: 450px;
     background-color: #e22c60;
 }
-.login-signup-text-wrapper .loginWrapper{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
-}
-.login-signup-text-wrapper .loginWrapper h2{
-    color: #fff;
-    border-bottom: 1px solid #333;
-    padding-bottom: 8px;
-    margin: 0 0 6px 0;
-}
-.login-signup-text-wrapper .loginWrapper p{
-    color: #fff;
-}
-.loginWrapper .form-group{
+
+    .login-signup-text-wrapper .loginWrapper {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+    }
+
+        .login-signup-text-wrapper .loginWrapper h2 {
+            color: #fff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+            margin: 0 0 6px 0;
+        }
+
+        .login-signup-text-wrapper .loginWrapper p {
+            color: #fff;
+        }
+
+.loginWrapper .form-group {
     float: left;
     width: 100%;
 }
-.signup-wrapper-slogan p, .login-wrapper-slogan p{
-font-size: 12px;
-float: left;
+
+.signup-wrapper-slogan p, .login-wrapper-slogan p {
+    font-size: 12px;
+    float: left;
     margin-top: 8px;
 }
+
 .login-signup-container .loginWrapper {
     margin-top: 42px;
 }
-.signinWrapper{
-        /*margin-top: 42px;*/
+
+.signinWrapper {
+    /*margin-top: 42px;*/
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide-caption {
+    position: absolute;
+    bottom: -8px;
+    background-color: #fff;
+    width: 100%;
+    opacity: 0.6;
+}
+.swiper-banner-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+        margin-top: 118px;
+}
+.swiper-slide.banner-item-1 {
+    height: 280px;
+    background-color: #777;
+    background-image: url(../images/banner-new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
 }
 /*LOGIN SIGNUP STYLES START*/
