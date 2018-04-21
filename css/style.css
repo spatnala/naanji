@@ -45,8 +45,8 @@ body {
     }
 
 .naanji-navbar-button {
-    background-color: #212121;
-    border: 1px solid #212121;
+    background-color:#e22d61;
+    border: 1px solid #e22d61;
     border-radius: 0 2px 2px 0;
     color: #565656;
     padding: 6px 0;
@@ -3093,21 +3093,22 @@ ul.pdp_progress-bar-wrapper {
 }
 
 .pdp_recommend-title {
-    display: block;
     color: #e22c60;
     font-weight: bold;
-    text-align: center;
+    float: left;
     margin-top: 4px;
     font-size: 18px;
     margin-bottom: 0;
+    padding-left: 8px;
 }
 
 .pdp_recommend-price {
-    display: block;
-    text-align: center;
+    float: right;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 4px;
+    margin-bottom: 0;
+    padding-right: 8px;
 }
 /*PDP CUSTOMER REVIEW PAGINATION START*/
 .pdp_review-pagination-container {
@@ -3285,11 +3286,12 @@ ul.pdp_progress-bar-wrapper {
 
 .swiper-slide-caption {
     position: absolute;
-    bottom: -8px;
+    bottom: 0px;
     background-color: #fff;
     width: 100%;
     opacity: 0.6;
 }
+
 .swiper-banner-container {
     width: 100%;
     height: 100%;
@@ -3299,8 +3301,9 @@ ul.pdp_progress-bar-wrapper {
     list-style: none;
     padding: 0;
     z-index: 1;
-        margin-top: 118px;
+    margin-top: 118px;
 }
+
 .swiper-slide.banner-item-1 {
     height: 280px;
     background-color: #777;
@@ -3309,4 +3312,54 @@ ul.pdp_progress-bar-wrapper {
     background-size: cover;
     background-position: 0;
 }
+
+.product-list-seeall-wrapper {
+    background-color: #e22c60;
+    padding: 49px 8px 49px 8px;
+    text-align: center;
+}
+
+    .product-list-seeall-wrapper a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+.product-list-products-wrapper {
+    padding: 0;
+}
+
+.cart-btn, .buy-btn {
+    width: 50%;
+    border: none;
+    color: #fff;
+    padding: 16px 8px;
+        margin-top: 16px;
+}
+
+    .cart-btn:hover, .buy-btn:hover {
+        border: none !important;
+    }
+
+    .cart-btn i, .buy-btn i {
+        margin-right: 8px;
+    }
+
+.cart-btn {
+    background-color: #428bca;
+}
+
+.buy-btn {
+    background-color: #e22c60;
+}
+.body-container {
+margin-top:118px;
+}
 /*LOGIN SIGNUP STYLES START*/
+/*ADD TO CART PAGE STYLES START*/
+.add-cart-title {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+/*ADD TO CART PAGE STYLES END*/
