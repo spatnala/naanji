@@ -72,21 +72,44 @@
     <div class="container body-container">
         <div class="row add-cart-container">
             <div class="col-md-8">
-                <div>
+                <div class="add-cart-title-location-wrapper">
                     <div class="add-cart-title">
-                        MY CART <span>2</span>
+                        MY CART <span>(2 items)</span>
                     </div>
-                    <div>
-                        <input type="text" id="cartLocation" />
+                    <div class="add-cart-location">
+  <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+  <input type="text" class="form-control" placeholder="Enter Delivery Pincode">
+  <span class="location-check">check</span>
+</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="product-detail.html"><img src="images/video-thumbs/wicks/108-wicks.jpg" class="img-responsive" /></a>
+                        <div class="cart-increment-decrement-wrapper">
+                            <span class="cart-decrement"><i class="fas fa-minus"></i></span>
+                            <span class="cart-no-of-items">1</span>
+                            <span class="cart-increment"><i class="fas fa-plus"></i></span>
+</div>
                     </div>
+                    <div class="col-md-6">
+                        <p class="cart-product-name">108 Wicks</p>
+                        <p>
+                            <span class="cart-product-discount-price">₹699</span>
+                            <span class="cart-product-original-price">₹1,499</span>
+                            <span class="cart-product-discount-percentage">53% Off</span>
+                        </p>
+                        <p class="cart-action-buttons-wrapper">
+                            <span>Move to Wishlist</span>
+                            <span>Remove Item</span>
+                        </p>
+                    </div>
+                    <div class="col-md-3" id="map-canvas"></div>
                 </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                    </ul>
-                </div>
-                <div>continue shopping  /  place order</div>
+                <div class="row cart-footer-wrapper">
+               <div class="col-md-7 right">
+    <a href="" class="product_add-cart-btn cart-btn"><i class="fas fa-shopping-basket"></i>Continue Shopping</a>
+                <a href="" class="product_add-cart-btn buy-btn"><i class="fas fa-bolt"></i>Buy Now</a> </div>
+            </div>
             </div>
             <div class="col-md-4">
                 price details
@@ -372,6 +395,7 @@
     <script src="js/holder.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <script src="js/bootstrap3-typeahead.js" type="text/javascript"></script>
+    <script src="js/googleMap.js" type="text/javascript"></script>
     <script src="js/add-to-cart.js"></script>
     <script src="js/app.js"></script>
     <script>

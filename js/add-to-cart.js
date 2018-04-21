@@ -15,6 +15,26 @@
         }
     });
     //UP DOWN VOTE VALUE CHANGE END
+
+//INCREMENT OR DECREMENT ADD TO CART VALUE START
+$(".cart-increment-decrement-wrapper").find(".cart-increment").on("click",function(){
+    var cartValue=parseInt($(".cart-no-of-items").text());
+    cartValue=cartValue+1;
+    $(".cart-no-of-items").text(cartValue);
+    $(".cart-decrement").removeClass("disabled");
+});
+$(".cart-increment-decrement-wrapper").find(".cart-decrement").on("click",function(){
+    var cartValue=parseInt($(".cart-no-of-items").text());
+    if(cartValue>=2){
+    cartValue=cartValue-1;
+    $(".cart-no-of-items").text(cartValue);
+}
+if(cartValue<=1){
+    $(this).addClass("disabled");
+}
+});
+//INCREMENT OR DECREMENT ADD TO CART VALUE END
+
     var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
     'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
     'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
@@ -28,4 +48,31 @@
     $('#cartLocation').typeahead({
         source: states
     });
+    initialize();
 });
+///USED TO EMBED GOOGLE MAP FN END.
+function initialize() {
+    var myLatLng = new google.maps.LatLng(17.3850, 78.4867),
+        myOptions = {
+            zoom: 3,
+            center: myLatLng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
+        marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map
+        });
+
+    marker.setMap(map);
+    moveMarker(map, marker);
+}
+
+function moveMarker(map, marker) {
+    //delayed so you can see it move
+    setTimeout(function () {
+        marker.setPosition(new google.maps.LatLng(17.3850, 78.4867));
+        map.panTo(new google.maps.LatLng(17.3850, 78.4867));
+    }, 1500);
+};
+///USED TO EMBED GOOGLE MAP FN END.
