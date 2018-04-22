@@ -152,11 +152,17 @@
                 </div>
                 <div>Address Type</div>
                 <div class="checkout-address-form">
-                    <label><input type="radio"/>Home (All Day Delivery)</label>
+                    <label class="rdoCheckoutHome">
+                        <input type="radio" name="checkoutAddress" />Home (All Day Delivery)
+                    </label>
                 </div>
-                <div class="checkout-address-form"><label><input type="radio"/>Work (Delivery btw 10AM to 5PM)</label></div>
+                <div class="checkout-address-form">
+                    <label class="rdoCheckoutOffice">
+                        <input type="radio" name="checkoutAddress"/>Work (Delivery btw 10AM to 5PM)
+                    </label>
+                </div>
                 <div class="margin-bottom-18 p-100 left">
-                    <a href="" class="product_add-cart-btn p-100 bg-brand-red border-brand-red color-white"><i class="fas fa-bolt"></i>Save and Deliver Here</a>
+                    <a href="" class="product_add-cart-btn bg-brand-red border-brand-red color-white">Save and Deliver Here</a>
                 </div>
             </form>
         </div>
@@ -164,6 +170,100 @@
 
         </div>
     </div>
+        </div>
+    </div>
+
+    <br/>
+        <div class="row">
+        <div class="col-md-12">
+            <p class="checkout-title">
+                <span class="checkout-title-text">
+                    <i class="fas fa-exclamation checkout-icon-error"></i>Order Summery
+                </span>
+                <span class="checkout-login-customer-details hide">Order Summery - 
+                    <span><span>1</span> item</span>
+                </span>
+                <span class="checkout-title-btn hide">Change</span>
+            </p>
+  <div class="row">
+                    <div class="col-md-3">
+                        <a href="product-detail.html"><img src="images/video-thumbs/wicks/108-wicks.jpg" class="img-responsive" /></a>
+                        
+                    </div>
+                    <div class="col-md-9">
+                        <p class="cart-product-name">108 Wicks</p>
+                        <p>
+                            <span class="cart-product-discount-price">₹699</span>
+                            <span class="cart-product-original-price">₹1,499</span>
+                            <span class="cart-product-discount-percentage">53% Off</span>
+                        </p>
+                        <div class="checkout-address-form checkout-ordersummery-email">
+                            <label>Order confirmation email will be sent to:
+                                <input type="text" name="" class="checkout-address" placeholder="Enter Email ID">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <br/>
+        <div class="row">
+        <div class="col-md-12">
+            <p class="checkout-title">
+                <span class="checkout-title-text">
+                    <i class="fas fa-exclamation checkout-icon-error"></i>Payment Options
+                </span>
+            </p>
+            <form class="bs-example" action="">
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <label for='rdoCheckoutNetBanking' style='width: 350px;'>
+                          <input type='radio' id='rdoCheckoutNetBanking' name='occupation' value='Working' required checked="checked" /> Net Banking
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
+                        </label>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class=panel-title>
+                        <label for='rdoCheckoutCard' style='width: 350px;'>
+                          <input type='radio' id='rdoCheckoutCard' name='occupation' value='Not-Working' required /> Credit / Debit / ATM Card
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                        </label>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class=panel-title>
+                        <label for='rdoCheckoutUPI' style='width: 350px;'>
+                          <input type='radio' id='rdoCheckoutUPI' name='occupation' value='Not-Working' required /> PhonePe / BHIM UPI
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+                        </label>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
         </div>
     </div>
         
@@ -475,8 +575,7 @@
     <script src="js/holder.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <script src="js/bootstrap3-typeahead.js" type="text/javascript"></script>
-    <script src="js/googleMap.js" type="text/javascript"></script>
-    <script src="js/add-to-cart.js"></script>
+    <script src="js/checkout.js"></script>
     <script src="js/app.js"></script>
     <script>
 

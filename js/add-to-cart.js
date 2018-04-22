@@ -58,6 +58,17 @@ if(cartNoOfItems<=1){
         source: states
     });
     initialize();
+    $('#collapseOne').on('shown', function(){
+        $('#radio1').prop('checked', true);
+    });
+
+    $('#collapseTwo').on('shown', function(){
+        $('#radio2').prop('checked', true);
+    });
+
+    $('#collapseThree').on('shown', function(){
+        $('#radio3').prop('checked', true);
+    });
 });
 ///USED TO EMBED GOOGLE MAP FN END.
 function initialize() {

@@ -3089,7 +3089,7 @@ ul.pdp_progress-bar-wrapper {
 }
 
 .p-100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 .pdp_recommend-title {
@@ -3660,5 +3660,34 @@ border: 1px solid #ccc;
 .checkout-address-form{
     float: left;
     width: 50%;
+}
+.rdoCheckoutHome input{
+margin-right: 8px;
+    margin-top: 8px;
+        margin-bottom: 20px;
+}
+.rdoCheckoutOffice input{
+    margin-right: 8px;
+    margin-top: 8px;
+        margin-bottom: 20px;
+}
+/*.checkout-order-summery-security-icon{
+font-size: 20px !important;
+width: auto !important;
+    padding-right: 6px;
+}
+.checkout-order-summery-secure-info{
+    padding-top: 4px !important;
+    }*/
+.checkout-ordersummery-email{
+    width: 100%;
+}
+.checkout-ordersummery-email label{
+    width: 100%;
+        float: left;
+}
+.checkout-ordersummery-email input{
+    float: none;
+    width: 45%;
 }
 /*CHECKOUT PAGE END*/
