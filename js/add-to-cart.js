@@ -17,19 +17,28 @@
     //UP DOWN VOTE VALUE CHANGE END
 
 //INCREMENT OR DECREMENT ADD TO CART VALUE START
+var cartNoOfItems=parseInt($(".cart-no-of-items").text());
+var cartItemPrice=parseInt($(".cart-price-details > span").text());
 $(".cart-increment-decrement-wrapper").find(".cart-increment").on("click",function(){
-    var cartValue=parseInt($(".cart-no-of-items").text());
-    cartValue=cartValue+1;
-    $(".cart-no-of-items").text(cartValue);
+    var tempPrice;
+    cartNoOfItems=cartNoOfItems+1;
+    $(".cart-no-of-items").text(cartNoOfItems);
+    $(".cart-price-no-of-items").text(cartNoOfItems);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
+    tempPrice=cartNoOfItems*cartItemPrice;
+    $(".cart-price-details > span").text(tempPrice);//USED TO UPDATE THE PRICE 
     $(".cart-decrement").removeClass("disabled");
 });
 $(".cart-increment-decrement-wrapper").find(".cart-decrement").on("click",function(){
-    var cartValue=parseInt($(".cart-no-of-items").text());
-    if(cartValue>=2){
-    cartValue=cartValue-1;
-    $(".cart-no-of-items").text(cartValue);
+    var cartNoOfItems=parseInt($(".cart-no-of-items").text());
+    var tempPrice;
+    if(cartNoOfItems>=2){
+    cartNoOfItems=cartNoOfItems-1;
+    $(".cart-no-of-items").text(cartNoOfItems);
+    $(".cart-price-no-of-items").text(cartNoOfItems);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
+    tempPrice=cartNoOfItems*cartItemPrice;
+    $(".cart-price-details > span").text(tempPrice);//USED TO UPDATE THE PRICE 
 }
-if(cartValue<=1){
+if(cartNoOfItems<=1){
     $(this).addClass("disabled");
 }
 });

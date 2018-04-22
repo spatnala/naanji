@@ -3382,13 +3382,13 @@ float: left;
 .add-cart-location span.location-icon {
     position: absolute;
     right: 225px;
-    top: 8px;
+    top: 0px;
     font-size: 18px;
 }
 .add-cart-location span.location-check {
     position: absolute;
     right: 6px;
-    top: 10px;
+    top: 2px;
     font-size: 14px;
     font-weight: bold;
     color: #428bca;
@@ -3405,7 +3405,11 @@ float: left;
     width: 65%;
     padding-left: 30px;
         padding-right: 50px;
+            padding-bottom: 26px;
     float: right;
+}
+.add-cart-location input:focus {
+    box-shadow: none;
 }
 .cart-increment-decrement-wrapper{
     float: left;
@@ -3477,4 +3481,184 @@ font-size: 16px;
     box-shadow: 0px -8px 5px -3px rgba(0, 0, 0, .1);
     margin-top: 30px;
 }
+.cart-price-title{
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    padding-bottom: 18px;
+}
+.cart-price-wrapper{
+    float: left;
+    width: 100%;
+}
+.cart-price-wrapper ul{
+padding: 0;
+list-style: none;
+float: left;
+}
+.cart-price-wrapper ul li{
+font-size: 16px;
+    float: left;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.cart-price-wrapper ul li .cart-price-text{
+float: left;
+    width: 50%;
+}
+.cart-price-wrapper ul li .cart-price-details{
+text-align: right;
+    width: 50%;
+    float: right;
+}
+.cart-price-divider{
+    border-bottom: 1px dashed #ccc;
+}
+.cart-price-slogan{
+    font-weight: normal;
+    font-size: 14px;
+    color: #388e3c;
+}
+.cart-secure-wrapper{
+float: left;
+    width: 100%;
+}
+.cart-secure-wrapper .cart-secure-icon{
+    float: left;
+    width: 14%;
+    font-size: 38px;
+    color: #e22d61;
+}
+.cart-secure-wrapper .cart-secure-info{
+    font-weight: bold;
+    padding-top: 8px;
+    float: left;
+    color: #616161;
+}
 /*ADD TO CART PAGE STYLES END*/
+
+/*CHECKOUT PAGE START*/
+.checkout-title{
+    background-color: #428bca;
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+}
+
+.checkout-login{
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 18px;
+        border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #e22d61;
+}
+ul.checkout-important-points{
+    list-style: none;
+}
+ul.checkout-important-points li{
+font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 18px;
+}
+ul.checkout-important-points li:first-child{
+border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+ul.checkout-important-points li span{
+    margin-right: 8px;
+    color: #428bca;
+    font-size: 14px;
+}
+.checkout-form{
+    position: relative; 
+}
+.checkout-form span{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    font-weight: bold;
+    color: #428bca;
+}
+.margin-bottom-18{
+    margin-bottom: 18px;
+}
+.bg-brand-red{
+    background-color: #e22d61;
+}
+.border-brand-red{
+    border: 1px solid #e22d61;
+}
+.color-white{
+    color: #fff;
+}
+.checkout-login-customer-details{
+font-size: 14px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+.checkout-title-btn{
+    float: right;
+    width: 50%;
+    text-align: right;
+    cursor: pointer;
+    font-size: 14px;
+}
+.checkout-title-text{
+    float: left;
+}
+.checkout-title-text i{
+    margin-right: 8px;
+}
+.checkout-title-text .checkout-icon-error{
+    color: #fb641b;
+    border: 1px solid #fb641b;
+    border-radius: 50%;
+    padding: 4px 9px;
+}
+
+.checkout-title-text .checkout-icon-success{
+    color: #79e27e;
+    border: 1px solid #79e27e;
+    border-radius: 50%;
+    padding: 4px;
+}
+.checkout-title-text .checkout-icon-success:before{
+    content: "\f00c";
+}
+.checkout-address{
+border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 14px;
+        width: 96%;
+    float: left;
+    margin-right: 4%;
+}
+.checkout-txtArea{
+border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 14px;
+        width: 98%;
+    float: left;
+    margin-right: 4%;
+}
+.checkout-select{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 96%;
+    margin-bottom: 16px;
+    float: left;
+    margin-right: 4%;
+}
+.checkout-address-form{
+    float: left;
+    width: 50%;
+}
+/*CHECKOUT PAGE END*/
