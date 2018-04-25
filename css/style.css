@@ -3585,6 +3585,7 @@ ul.checkout-important-points li span{
     right: 0;
     font-weight: bold;
     color: #428bca;
+    cursor: pointer;
 }
 .margin-bottom-18{
     margin-bottom: 18px;
@@ -3621,7 +3622,8 @@ font-size: 14px;
     color: #fb641b;
     border: 1px solid #fb641b;
     border-radius: 50%;
-    padding: 4px 9px;
+    padding: 4px 8px;
+    font-size: 12px;
 }
 
 .checkout-title-text .checkout-icon-success{
@@ -3689,5 +3691,71 @@ width: auto !important;
 .checkout-ordersummery-email input{
     float: none;
     width: 45%;
+}
+ul.checkout-bank-wrapper{
+padding: 0;
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+ul.checkout-bank-wrapper li{
+    float: left;
+        width: 33%;
+    margin-bottom: 8px;
+}
+ul.checkout-bank-wrapper li input{
+    margin-right: 6px;
+}
+.clear-left{
+    clear: left;
+}
+.checkout-card-expiry-details{
+        float: left;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+.checkout-card-expiry-details span{
+        float: left;
+    padding: 10px 10px;
+}
+.checkout-card-expiry-details select{
+    float: left;
+    border: none;
+    width: 30%;
+    margin: 0;
+    padding: 11px 8px;
+    font-weight: bold;
+} 
+.checkout-cvv-wrapper{
+    width: 19%;
+    float: left;
+    position: relative;
+}
+.checkout-cvv-wrapper input{
+    padding: 10px 30px 10px 10px;
+}
+.checkout-cvv-wrapper span{
+    position: absolute;
+        right: 16px;
+    top: 10px;
+    cursor: pointer;
+}
+.checkout-save-card-details{
+    float: left;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.checkout-save-card-details input{
+    margin-right: 6px;
+}
+.checkout-pricedetails-fixed{
+    position: fixed;
+    right: 42px;
+}
+.panel-group .panel{
+    border-radius: 0px;
+}
+.tooltip.right{
+    width: 200px;
 }
 /*CHECKOUT PAGE END*/

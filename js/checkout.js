@@ -10,4 +10,5 @@
     $('#rdoCheckoutUPI').on('click', function(){
       $(this).parent().find('a').trigger('click');
     });
+    $('.checkout-cvv-wrapper span').tooltip('hide')
 });
