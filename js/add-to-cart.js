@@ -16,33 +16,39 @@
     });
     //UP DOWN VOTE VALUE CHANGE END
 
-//INCREMENT OR DECREMENT ADD TO CART VALUE START
-var cartNoOfItems=parseInt($(".cart-no-of-items").text());
-var cartItemPrice=parseInt($(".cart-price-details > span").text());
-$(".cart-increment-decrement-wrapper").find(".cart-increment").on("click",function(){
-    var tempPrice;
-    cartNoOfItems=cartNoOfItems+1;
-    $(".cart-no-of-items").text(cartNoOfItems);
-    $(".cart-price-no-of-items").text(cartNoOfItems);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
-    tempPrice=cartNoOfItems*cartItemPrice;
-    $(".cart-price-details > span").text(tempPrice);//USED TO UPDATE THE PRICE 
-    $(".cart-decrement").removeClass("disabled");
-});
-$(".cart-increment-decrement-wrapper").find(".cart-decrement").on("click",function(){
-    var cartNoOfItems=parseInt($(".cart-no-of-items").text());
-    var tempPrice;
-    if(cartNoOfItems>=2){
-    cartNoOfItems=cartNoOfItems-1;
-    $(".cart-no-of-items").text(cartNoOfItems);
-    $(".cart-price-no-of-items").text(cartNoOfItems);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
-    tempPrice=cartNoOfItems*cartItemPrice;
-    $(".cart-price-details > span").text(tempPrice);//USED TO UPDATE THE PRICE 
-}
-if(cartNoOfItems<=1){
-    $(this).addClass("disabled");
-}
-});
-//INCREMENT OR DECREMENT ADD TO CART VALUE END
+    //INCREMENT OR DECREMENT ADD TO CART VALUE START
+    var cartNoOfItems = parseInt($(".cart-no-of-items").text());
+    var cartItemPrice = parseInt($(".cart-price-details > span[data-item-price]").text());
+    console.log("no of items: " + cartNoOfItems);
+    console.log("item price : " + cartItemPrice);
+    $(".cart-increment-decrement-wrapper").find(".cart-increment").on("click", function () {
+        var tempPrice;
+        var finalPrice = parseInt($(".cart-delivery-charges > span").text());
+        cartNoOfItems = cartNoOfItems + 1;
+        $(".cart-no-of-items").text(cartNoOfItems);
+        $(".cart-price-no-of-items").text(cartNoOfItems);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
+        tempPrice = cartNoOfItems * cartItemPrice;
+        console.log("final price: " + finalPrice);
+        $(".cart-price-details > span[data-item-price]").text(tempPrice);//USED TO UPDATE THE PRICE 
+        $(".cart-decrement").removeClass("disabled");
+        finalPrice = tempPrice + finalPrice;
+        $(".cart-total-price > span").text(finalPrice);
+    });
+    $(".cart-increment-decrement-wrapper").find(".cart-decrement").on("click", function () {
+        var cartNoOfItemsDec = parseInt($(".cart-no-of-items").text());
+        var tempPrice;
+        if (cartNoOfItemsDec >= 2) {
+            cartNoOfItemsDec = cartNoOfItemsDec - 1;
+            $(".cart-no-of-items").text(cartNoOfItemsDec);
+            $(".cart-price-no-of-items").text(cartNoOfItemsDec);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
+            tempPrice = cartNoOfItemsDec * cartItemPrice;
+            $(".cart-price-details > span[data-item-price]").text(tempPrice);//USED TO UPDATE THE PRICE 
+        }
+        if (cartNoOfItemsDec <= 1) {
+            $(this).addClass("disabled");
+        }
+    });
+    //INCREMENT OR DECREMENT ADD TO CART VALUE END
 
     var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
     'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
@@ -58,15 +64,15 @@ if(cartNoOfItems<=1){
         source: states
     });
     initialize();
-    $('#collapseOne').on('shown', function(){
+    $('#collapseOne').on('shown', function () {
         $('#radio1').prop('checked', true);
     });
 
-    $('#collapseTwo').on('shown', function(){
+    $('#collapseTwo').on('shown', function () {
         $('#radio2').prop('checked', true);
     });
 
-    $('#collapseThree').on('shown', function(){
+    $('#collapseThree').on('shown', function () {
         $('#radio3').prop('checked', true);
     });
 });
