@@ -19,8 +19,8 @@
     //INCREMENT OR DECREMENT ADD TO CART VALUE START
     var cartNoOfItems = parseInt($(".cart-no-of-items").text());
     var cartItemPrice = parseInt($(".cart-price-details > span[data-item-price]").text());
-    console.log("no of items: " + cartNoOfItems);
-    console.log("item price : " + cartItemPrice);
+    //console.log("no of items: " + cartNoOfItems);
+    //console.log("item price : " + cartItemPrice);
     $(".cart-increment-decrement-wrapper").find(".cart-increment").on("click", function () {
         var tempPrice;
         var finalPrice = parseInt($(".cart-delivery-charges > span").text());
@@ -28,7 +28,7 @@
         $(".cart-no-of-items").text(cartNoOfItems);
         $(".cart-price-no-of-items").text(cartNoOfItems);//USED TO UPDATE THE PRICE DETAIL ITEM SECTION
         tempPrice = cartNoOfItems * cartItemPrice;
-        console.log("final price: " + finalPrice);
+        //console.log("final price: " + finalPrice);
         $(".cart-price-details > span[data-item-price]").text(tempPrice);//USED TO UPDATE THE PRICE 
         $(".cart-decrement").removeClass("disabled");
         finalPrice = tempPrice + finalPrice;
@@ -63,7 +63,7 @@
     $('#cartLocation').typeahead({
         source: states
     });
-    initialize();
+    //initialize();
     $('#collapseOne').on('shown', function () {
         $('#radio1').prop('checked', true);
     });
@@ -76,8 +76,9 @@
         $('#radio3').prop('checked', true);
     });
 });
+
 ///USED TO EMBED GOOGLE MAP FN END.
-function initialize() {
+/*function initialize() {
     var myLatLng = new google.maps.LatLng(17.3850, 78.4867),
         myOptions = {
             zoom: 3,
@@ -92,7 +93,7 @@ function initialize() {
 
     marker.setMap(map);
     moveMarker(map, marker);
-}
+}*/
 
 function moveMarker(map, marker) {
     //delayed so you can see it move

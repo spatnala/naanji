@@ -1,33 +1,28 @@
 ﻿$(function () {
     // Initialize form validation on the registration form.
     // It has the name attribute "registration"
-    $("form[name='writeReviewForm']").validate({
-        // Specify validation rules
+    $('form').validate({
         rules: {
-            // The key name on the left side is the name attribute
-            // of an input field. Validation rules are defined
-            // on the right side
-            inputReviewTitle: "required",
-            inputReviewMsg: "required",
-            inputFullName: "required",
-            txtReviewerEmail: {
-                required: true,
-                // Specify that email should be validated
-                // by the built-in "email" rule
-                email: true
+            txtDeliveryPin: {
+                minlength: 6,
+                maxlength: 6,
+                required: true
             }
         },
-        // Specify validation error messages
-        messages: {
-            inputReviewTitle: "Please enter the title of your review",
-            inputReviewMsg: "Please enter your message",
-            inputFullName: "Please enter your full name",
-            txtReviewerEmail: "Please enter a valid email address"
+        highlight: function (element) {
+            $(element).closest('.form-group').addClass('has-error');
         },
-        // Make sure the form is submitted to the destination defined
-        // in the "action" attribute of the form when valid
-        submitHandler: function (form) {
-            form.submit();
+        unhighlight: function (element) {
+            $(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'help-block',
+        errorPlacement: function (error, element) {
+            if (element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
         }
     });
 });
